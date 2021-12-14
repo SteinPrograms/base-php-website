@@ -7,7 +7,7 @@ function chart($name,$dates,$values){
     echo('<center><div style="width:75%;height:50%">
     <canvas id="'.$name.'"></canvas>
     <script>
-    const '.$name.' = document.getElementById("'.$name.'").getContext("2d");
+    var '.$name.' = document.getElementById("'.$name.'").getContext("2d");
     new Chart('.$name.', {
         type: "line",
         data: {
