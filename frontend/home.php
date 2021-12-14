@@ -29,8 +29,8 @@
 
     <h1>Welcome</h1>
     <?php
-    $test = "Hugo";
-    echo "<h2>$_SESSION['username']</h2>";
+    $test = $_SESSION['username'];
+    echo "<h2>$test</h2>";
     database_to_chart();
     ?>
         
