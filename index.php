@@ -1,3 +1,5 @@
+/* This is the login page */
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +9,7 @@
     <title>TradingWebsiteTracker</title>
 </head>
 <body>
-    <h1>Welcome</h1>
-    <?php
-    $username = "Hugo";
-    echo "<p>".$username."</p>";
-    ?>
+    <h1>Welcome on my Website</h1>
+    <header href="http://www.google.com"></header>
 </body>
 </html>
