@@ -1,7 +1,7 @@
 
 <?php
 ini_set('display_errors', 1);
-require("../fnctions/functions.php");
+require("../functions/functions.php");
 header()
 ?>
 <!DOCTYPE html>
