@@ -36,9 +36,9 @@ function chart($name,$dates,$values){
             },
             scales: {
                 xAxes: [{
-                    gridLines: {
-                        color: "rgba(200, 200, 200, 0.05)",
-                        lineWidth: 1
+                    title: {
+                        display: true,
+                        text: "Month"
                     }
                 }],
                 yAxes: [{
