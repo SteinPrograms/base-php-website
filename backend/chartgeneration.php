@@ -10,9 +10,9 @@ function chart($name,$dates,$values){
     var '.$name.' = document.getElementById("'.$name.'").getContext("2d"),
         gradient = '.$name.'.createLinearGradient(0, 0, 0, 450);
 
-    gradient.addColorStop(0, #0E4623);
-    gradient.addColorStop(0.5, #0E4623);
-    gradient.addColorStop(1, #0E4623);
+    gradient.addColorStop(0, "#0E4623");
+    gradient.addColorStop(0.5, "rgba(255, 0, 0, 0.25)");
+    gradient.addColorStop(1, "rgba(255, 0, 0, 0)");
 
 
     new Chart('.$name.',{
@@ -23,7 +23,7 @@ function chart($name,$dates,$values){
                 label: "Evolution du portfolio : '.$name.'",
                 data: '.$values.',
                 backgroundColor: gradient,
-                borderColor: "rgba('.$random_color1.', '.$random_color2.', '.$random_color3.', 1)",
+                borderColor: "#0E4623",
                 borderWidth: 3
             }]
         },
