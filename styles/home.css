@@ -20,3 +20,7 @@ button:hover{
 }
 
 
+h1:hover{
+    color:white;
+    animation-duration: 1s;
+}
