@@ -9,8 +9,8 @@
 <body>
     <h1>Welcome</h1>
     <? 
-    $username = $this->session->userdata('username');
-    echo $username;
+    $username = "Hugo";
+    echo "<p>".$username."</p>";
     ?>
 </body>
 </html>
