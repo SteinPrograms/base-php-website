@@ -12,10 +12,6 @@
 <body>
     <!-- Affichage du formulaire de connexion et d'inscription -->
     <div class="form-box">
-        <?php
-        $test = "Bonjour tout le monde";
-        echo "il y a du monde ! $test";
-        ?>
         <!-- Boutons connexion et inscription pour passer d'un affichage à un autre -->
         <div class="button-box">
             <button id="login_btn" type="button" class="toggle-btn" onclick="connexion()">Connexion</button>
