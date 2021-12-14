@@ -12,7 +12,7 @@
     <h1>Welcome on my Website</h1>
     
     <?php
-    header("location:./pages/modele.php");
+    header("location:./pages/main.php");
     ?>
 </body>
 </html>
