@@ -35,6 +35,7 @@ function chart($name,$dates,$values){
                 duration: 520
             },
             scales: {
+                color: white,
                 xAxes: [{
                     title: {
                         display: true,
