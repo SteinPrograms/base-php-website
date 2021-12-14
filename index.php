@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Welcome</h1>
-    <? 
+    <?php
     $username = "Hugo";
     echo "<p>".$username."</p>";
     ?>
