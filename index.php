@@ -14,7 +14,7 @@
     <div class="form-box">
         <?php
         $test = "Bonjour tout le monde";
-        echo "$test";
+        echo "il y a du monde ! $test";
         ?>
         <!-- Boutons connexion et inscription pour passer d'un affichage à un autre -->
         <div class="button-box">
