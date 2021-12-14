@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require("../backend/database.php");
     if ($_SESSION["auth"]!=1){
         header('Location:../index.php?erreur=1');
     }
@@ -25,16 +26,9 @@
       </form>
     </div>
 
-    <h1>
-        Tableau de bord pour la suivi de compte
-    </h1>
-
-    <p>
-        Veuillez trouver ci-dessous les différents graphiques d'évolution de vos comptes :
-    </p>
-
+    <h1>Welcome</h1>
     <?php
-    require("../backend/database.php");
+    echo "<h2>$_SESSION['username']</h2>";    
     database_to_chart();
     ?>
         
