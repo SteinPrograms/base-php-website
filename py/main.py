@@ -1,15 +1,13 @@
 from database import MyDatabase
-
+from random import randrange
 
 MyDatabase().add_new_portfolio("Hugo")
 
-values = [
-    40,50,80,200
-]
+
 
 portfolios = MyDatabase().get_portfolios()
 
 
 for portfolio in portfolios:
-    for value in values: 
-        MyDatabase().add_new_value_to_portfolio(portfolio,value)
+    for _ in range(5): 
+        MyDatabase().add_new_value_to_portfolio(portfolio,randrange(200))
