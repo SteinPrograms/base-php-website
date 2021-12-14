@@ -22,8 +22,7 @@
 
 <body>
 <div class="header"> 
-    <a href="./home.php">Accueil</a>
-    <a href="./settings.php">Paramètres</a>
+    <img src="../assets/avatar.png" alt="" width="50px">
     <form action='../backend/logout.php'>
         <input type='submit' value='deconnexion'/>
     </form>
@@ -41,9 +40,8 @@
     ?>
     </div>
 <div class="task-bar">
-    <i class="fas fa-home"  ></i>
-    <i class="fas fa-home"  ></i>
-    <i class="fas fa-home"  ></i>
+    <a href="./home.php"><i class="fas fa-home"></i></a>
+    <a href="./settings.php"><i class="fas fa-cogs"></i></a>
 </div>
 
 </body>

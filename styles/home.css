@@ -11,6 +11,10 @@ body{
     text-align:right;
 }
 
+.header img{
+    border-radius: 100px;
+}
+
 a:hover.header{
     transition:1.0s;
     font-size: 70px;
@@ -65,3 +69,4 @@ h2{
     vertical-align: middle;
     color:gray;
 }
+
