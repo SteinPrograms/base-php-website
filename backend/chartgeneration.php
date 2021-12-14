@@ -10,9 +10,9 @@ function chart($name,$dates,$values){
     var '.$name.' = document.getElementById("'.$name.'").getContext("2d"),
         gradient = '.$name.'.createLinearGradient(0, 0, 0, 450);
 
-    gradient.addColorStop(0, "rgba(255, 0,0, 0.5)");
-    gradient.addColorStop(0.5, "rgba(255, 0, 0, 0.25)");
-    gradient.addColorStop(1, "rgba(255, 0, 0, 0)");
+    gradient.addColorStop(0, #0E4623);
+    gradient.addColorStop(0.5, #0E4623);
+    gradient.addColorStop(1, #0E4623);
 
 
     new Chart('.$name.',{
