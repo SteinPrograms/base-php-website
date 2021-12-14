@@ -12,7 +12,8 @@ function chart($name,$dates,$values){
     
     
     gradient.addColorStop(0, "#B4E845");
-    gradient.addColorStop(1, "rgba(0, 0, 0, 0)");
+
+    gradient.addColorStop(0.25, "rgba(0, 0, 0, 0)");
 
 
     new Chart('.$name.',{
@@ -26,22 +27,16 @@ function chart($name,$dates,$values){
                 data: '.$values.',
                 backgroundColor: gradient,
                 borderColor: "#B4E845",
-                borderWidth: 3,
+                borderWidth: 1.5,
                 fill: true,
             }]
         },
         options: {
-            legend: {
-                display: false
-            },
             color:"white",
-            responsive: true,
-            maintainAspectRatio: true,
             animation: {
                 easing: "easeInOutQuad",
-                duration: 2000
+                duration: 1000
             },
-            
         }
     });
     </script>
