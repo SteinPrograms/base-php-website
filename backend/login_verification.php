@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors', 'on');
+
 include("database.php");
 test();
 if(isset($_POST['username']) && isset($_POST['password'])){
