@@ -7,7 +7,8 @@ function chart($name,$dates,$values){
     echo('<center><div style="width:75%;height:50%">
     <canvas id="'.$name.'"></canvas>
     <script>
-    var '.$name.' = document.getElementById("'.$name.'").getContext("2d");
+    var '.$name.' = document.getElementById("'.$name.'").getContext("2d"),
+        gradient = chart.createLinearGradient(0, 0, 0, 450);
     new Chart('.$name.', {
         type: "line",
         data: {
