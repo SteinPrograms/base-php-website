@@ -26,7 +26,7 @@
                 <button id="login_btn" type="button" class="toggle-btn" onclick="connexion()">Connexion</button>
                 <button id="register_btn" type="button" class="toggle-btn" onclick="inscription()">Inscription</button>
             </div>
-            <form id="connexion" class="input-group" action="view/login_verification.php" method="POST">
+            <form id="connexion" class="input-group" action="pages/main.php" method="POST">
         
                 <i class="fas fa-user field_group">
                 <input type="text" class="input-field" placeholder="Identifiant" name="username" required>
