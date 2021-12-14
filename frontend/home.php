@@ -35,7 +35,7 @@
 
     <?php
     require("../backend/database.php");
-    database_to_chart();
+    
     ?>
         
 
