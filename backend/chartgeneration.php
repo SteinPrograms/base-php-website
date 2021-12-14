@@ -9,7 +9,8 @@ function chart($name,$dates,$values){
     <script>
     var '.$name.' = document.getElementById("'.$name.'").getContext("2d"),
         gradient = '.$name.'.createLinearGradient(0, 0, 0, 450);
-
+    
+    '.$name.'.defaults.global.defaultFontColor = "#fff";
     gradient.addColorStop(0, "#B4E845");
     gradient.addColorStop(1, "rgba(0, 0, 0, 0)");
 
@@ -55,7 +56,6 @@ function chart($name,$dates,$values){
             },
             legend: {
                 display: false,
-                color : "white"
             },
             point: {
                 backgroundColor: "white"
