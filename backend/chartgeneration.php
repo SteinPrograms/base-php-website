@@ -24,7 +24,8 @@ function chart($name,$dates,$values){
                 backgroundColor: gradient,
                 borderColor: "#B4E845",
                 borderWidth: 3,
-                fill: true
+                fill: true,
+                color : "#FFFFFF",
             }]
         },
         options: {
