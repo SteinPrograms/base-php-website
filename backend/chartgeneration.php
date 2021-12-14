@@ -31,19 +31,19 @@ function chart($name,$dates,$values){
             responsive: true,
             maintainAspectRatio: true,
             animation: {
-                easing: 'easeInOutQuad',
+                easing: "easeInOutQuad",
                 duration: 520
             },
             scales: {
                 xAxes: [{
                     gridLines: {
-                        color: 'rgba(200, 200, 200, 0.05)',
+                        color: "rgba(200, 200, 200, 0.05)",
                         lineWidth: 1
                     }
                 }],
                 yAxes: [{
                     gridLines: {
-                        color: 'rgba(200, 200, 200, 0.08)',
+                        color: "rgba(200, 200, 200, 0.08)",
                         lineWidth: 1
                     }
                 }]
@@ -57,12 +57,12 @@ function chart($name,$dates,$values){
                 display: false
             },
             point: {
-                backgroundColor: 'white'
+                backgroundColor: "white"
             },
             tooltips: {
-                titleFontFamily: 'Open Sans',
-                backgroundColor: 'rgba(0,0,0,0.3)',
-                titleFontColor: 'red',
+                titleFontFamily: "Open Sans",
+                backgroundColor: "rgba(0,0,0,0.3)",
+                titleFontColor: "red",
                 caretSize: 5,
                 cornerRadius: 2,
                 xPadding: 10,
