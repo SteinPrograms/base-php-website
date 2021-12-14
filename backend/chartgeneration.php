@@ -22,7 +22,7 @@ function chart($name,$dates,$values){
             datasets: [{
                 label: "Evolution du portfolio : '.$name.'",
                 data: '.$values.',
-                backgroundColor: "rgba('.$random_color1.', '.$random_color2.', '.$random_color3.', 1)",
+                backgroundColor: gradient,
                 borderColor: "rgba('.$random_color1.', '.$random_color2.', '.$random_color3.', 1)",
                 borderWidth: 3
             }]
