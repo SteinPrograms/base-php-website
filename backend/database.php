@@ -12,7 +12,7 @@ function cnxDB(){
         }
     }
 
-
+/*
 function database_to_chart(){
     require("chartgeneration.php");
 
@@ -61,5 +61,5 @@ function database_to_chart(){
             echo "Il n'y a pas de graphiques à afficher" ;
         }
 }
-
+*/
 ?>
