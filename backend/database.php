@@ -11,7 +11,9 @@ function cnxDB(){
             return $connexion;
         }
     }
-
+function test(){
+    echo "Hello world";
+}
 
 function database_to_chart(){
     require("chartgeneration.php");
