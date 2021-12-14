@@ -29,6 +29,7 @@ function chart($name,$dates,$values){
             }]
         },
         options: {
+            scaleFontColor: "#FFFFFF",
             responsive: true,
             maintainAspectRatio: true,
             animation: {
