@@ -2,7 +2,7 @@ from database import MyDatabase
 from random import randrange
 from datetime import datetime
 
-
+MyDatabase().add_new_portfolio("Hugo")
 portfolios = MyDatabase().get_portfolios()
 
 for portfolio in portfolios:

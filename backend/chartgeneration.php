@@ -31,6 +31,9 @@ function chart($name,$dates,$values){
             }]
         },
         options: {
+            legend: {
+                display: false
+            },
             color:"white",
             responsive: true,
             maintainAspectRatio: true,
