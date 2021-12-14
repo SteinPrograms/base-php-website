@@ -6,10 +6,6 @@
     <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
     <link rel="stylesheet" href="./styles/style.css" media="screen" type="text/css"/>
     <script src="https://kit.fontawesome.com/ed342dc3ca.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-    
-    
-
 
     <title>PortfolioTracker | Login</title>
 </head>
