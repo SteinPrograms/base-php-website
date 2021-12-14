@@ -29,7 +29,6 @@
 
     <h1>Welcome</h1>
     <?php
-    echo "<h2>$_SESSION['username']</h2>";    
     database_to_chart();
     ?>
         
