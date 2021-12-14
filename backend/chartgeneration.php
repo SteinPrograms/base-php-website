@@ -25,7 +25,6 @@ function chart($name,$dates,$values){
                 borderColor: "#B4E845",
                 borderWidth: 3,
                 fill: true,
-                color : "#FFFFFF",
             }]
         },
         options: {
@@ -55,20 +54,12 @@ function chart($name,$dates,$values){
                 }
             },
             legend: {
-                display: false
+                display: false,
+                color : "white"
             },
             point: {
                 backgroundColor: "white"
             },
-            tooltips: {
-                titleFontFamily: "Open Sans",
-                backgroundColor: "rgba(0,0,0,0.3)",
-                titleFontColor: "red",
-                caretSize: 5,
-                cornerRadius: 2,
-                xPadding: 10,
-                yPadding: 10
-            }
         }
     });
     </script>
