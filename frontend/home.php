@@ -30,7 +30,7 @@
     <h1>Welcome</h1>
     <?php
     $test = "Hugo"
-    echo "<h2>$test</h2>";
+    echo "<h2>".$test."</h2>";
     database_to_chart();
     ?>
         
