@@ -13,7 +13,7 @@
     <!-- Affichage du formulaire de connexion et d'inscription -->
     <div class="form-box">
         <?php
-        $test = "test";
+        $test = "Bonjour tout le monde";
         echo "$test";
         ?>
         <!-- Boutons connexion et inscription pour passer d'un affichage à un autre -->
