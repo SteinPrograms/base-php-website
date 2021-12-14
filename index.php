@@ -10,6 +10,9 @@
 </head>
 <body>
     <h1>Welcome on my Website</h1>
-    <header location="http://www.google.com"></header>
+    
+    <?php
+    header("location:./pages/modele.php");
+    ?>
 </body>
 </html>
