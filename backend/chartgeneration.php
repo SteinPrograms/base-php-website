@@ -15,7 +15,7 @@ function chart($name,$dates,$values){
     gradient.addColorStop(1, "rgba(255, 0, 0, 0)");
 
 
-    new Chart('.$name.', {
+    new Chart('.$name.',{
         type: "line",
         data: {
             labels:'.$dates.',
@@ -28,10 +28,45 @@ function chart($name,$dates,$values){
             }]
         },
         options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            animation: {
+                easing: 'easeInOutQuad',
+                duration: 520
+            },
             scales: {
-                y: {
-                    beginAtZero: true
+                xAxes: [{
+                    gridLines: {
+                        color: 'rgba(200, 200, 200, 0.05)',
+                        lineWidth: 1
+                    }
+                }],
+                yAxes: [{
+                    gridLines: {
+                        color: 'rgba(200, 200, 200, 0.08)',
+                        lineWidth: 1
+                    }
+                }]
+            },
+            elements: {
+                line: {
+                    tension: 0.4
                 }
+            },
+            legend: {
+                display: false
+            },
+            point: {
+                backgroundColor: 'white'
+            },
+            tooltips: {
+                titleFontFamily: 'Open Sans',
+                backgroundColor: 'rgba(0,0,0,0.3)',
+                titleFontColor: 'red',
+                caretSize: 5,
+                cornerRadius: 2,
+                xPadding: 10,
+                yPadding: 10
             }
         }
     });
