@@ -15,7 +15,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortfolioTracker</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/home.css">
+
 </head>
 
 <body>
@@ -32,11 +34,16 @@
     <?php
     $test = $_SESSION['username'];
     echo "<h2>$test</h2>";
+    ?>
+    <div class="graph">
+    <?php 
     database_to_chart();
     ?>
-    
+    </div>
 <div class="task-bar">
-    
+    <i class="fas fa-home"  ></i>
+    <i class="fas fa-home"  ></i>
+    <i class="fas fa-home"  ></i>
 </div>
 
 </body>

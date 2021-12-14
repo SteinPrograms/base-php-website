@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 import mysql.connector
 
 
@@ -36,7 +36,7 @@ class MyDatabase:
     def add_new_value_to_portfolio(self,portfolioName,value):
         cnx = mysql.connector.connect(user='hugodemenez', database='database',password='password')
         cursor = cnx.cursor()
-        query = (f"INSERT INTO data values ('{portfolioName}','{datetime.date.today()}',{value})")
+        query = (f"INSERT INTO data values ('{portfolioName}','{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}',{value})")
 
 
         self.execute_request(cursor, query, cnx)

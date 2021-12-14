@@ -4,7 +4,7 @@ function chart($name,$dates,$values){
     $random_color1 =(rand(0, 255));
     $random_color2 =(rand(0, 255));
     $random_color3 =(rand(0, 255));
-    echo('<center><div style="width:75%;height:50%">
+    echo('<center><div style="width:100%;height:100%">
     <canvas id="'.$name.'"></canvas>
     <script>
     var '.$name.' = document.getElementById("'.$name.'").getContext("2d"),
@@ -18,8 +18,10 @@ function chart($name,$dates,$values){
     new Chart('.$name.',{
         type: "line",
         data: {
+            color:"white",
             labels:'.$dates.',
             datasets: [{
+                color:"white",
                 label: "Evolution du portfolio : '.$name.'",
                 data: '.$values.',
                 backgroundColor: gradient,
@@ -29,38 +31,14 @@ function chart($name,$dates,$values){
             }]
         },
         options: {
-            scaleFontColor: "#FFFFFF",
+            color:"white",
             responsive: true,
             maintainAspectRatio: true,
             animation: {
                 easing: "easeInOutQuad",
-                duration: 1000
+                duration: 2000
             },
-            scales: {
-                xAxes: [{
-                    title: {
-                        display: true,
-                        text: "Month"
-                    }
-                }],
-                yAxes: [{
-                    gridLines: {
-                        color: "rgba(200, 200, 200, 0.08)",
-                        lineWidth: 1
-                    }
-                }]
-            },
-            elements: {
-                line: {
-                    tension: 0.4
-                }
-            },
-            legend: {
-                display: false,
-            },
-            point: {
-                backgroundColor: "white"
-            },
+            
         }
     });
     </script>
