@@ -32,10 +32,9 @@ function chart($name,$dates,$values){
             maintainAspectRatio: true,
             animation: {
                 easing: "easeInOutQuad",
-                duration: 520
+                duration: 1000
             },
             scales: {
-                color: white,
                 xAxes: [{
                     title: {
                         display: true,
