@@ -1,5 +1,6 @@
 <?php
 ini_set('display_errors', 'on');
+echo getcwd();
 if(isset($_POST['username']) && isset($_POST['password'])){
    $username = $_POST['username'];
    $password = $_POST['password'];
