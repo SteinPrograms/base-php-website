@@ -21,6 +21,7 @@ function chart($name,$dates,$values){
             }]
         },
         options: {
+            bezierCurve: false,
             scales: {
                 y: {
                     beginAtZero: true
