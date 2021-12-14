@@ -2,7 +2,6 @@
 <?php
 ini_set('display_errors', 1);
 require("../functions/functions.php");
-header()
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -12,7 +11,7 @@ header()
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortfolioTracker</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
+    <?php head(); ?>
 
 </head>
 
