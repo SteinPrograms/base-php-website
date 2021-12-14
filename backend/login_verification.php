@@ -3,18 +3,7 @@ ini_set('display_errors', 'on');
 if(isset($_POST['username']) && isset($_POST['password'])){
    $username = $_POST['username'];
    $password = $_POST['password'];
-   function cnxDB(){
-      $connexion = mysqli_connect("localhost", "hugodemenez", "password" , "database") ;
-
-      // si jamais la connexion n'était obtenue
-      if ( ! $connexion )  
-      {
-          die("Connexion impossible : " . mysqli_connect_error());  // fin du programme en affichant un message d'erreur
-      } 
-      else{
-          return $connexion;
-      }
-  }
+   require('../backend/database.php');
    $conn = cnxDB();
    $results = $conn->query("SELECT * FROM user WHERE username = '$username'");
    $row = $results->fetch_assoc();
