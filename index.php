@@ -10,6 +10,6 @@
 </head>
 <body>
     <h1>Welcome on my Website</h1>
-    <header href="http://www.google.com"></header>
+    <header location="http://www.google.com"></header>
 </body>
 </html>
