@@ -21,9 +21,10 @@ button:hover{
 
 h1{
     text-align: center;
-
+    color:gray;
 }
-h1:hover{
+
+h2{
+    text-align: center;
     color:white;
-    animation-duration: 3s;
 }
