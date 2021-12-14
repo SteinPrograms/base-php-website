@@ -18,8 +18,8 @@ a:hover.header{
     font-size: 70;
 }
 
-button:hover{
-    font-size: 80px;
+button{
+    font-size: 200px;
 }
 
 h1{
@@ -30,4 +30,12 @@ h1{
 h2{
     text-align: center;
     color:darkgray;
+}
+
+
+.task-bar {
+    width: 100%;
+    height: 10%;
+    background-color:black;
+
 }

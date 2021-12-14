@@ -20,12 +20,13 @@
 
 <body>
 <div class="header"> 
-      <a href="./home.php">Accueil</a>
-      <a href="./settings.php">Paramètres</a>
-      <form action='../backend/logout.php'>
+    <a href="./home.php">Accueil</a>
+    <a href="./settings.php">Paramètres</a>
+    <form action='../backend/logout.php'>
         <input type='submit' value='deconnexion'/>
-      </form>
-    </div>
+    </form>
+</div>
+
 
     <h1>Welcome</h1>
     <?php
@@ -33,8 +34,10 @@
     echo "<h2>$test</h2>";
     database_to_chart();
     ?>
-        
-
+    
+<div class="task-bar">
+    
+</div>
 
 </body>
 </html>

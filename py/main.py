@@ -1,6 +1,8 @@
 from database import MyDatabase
 from random import randrange
 
+MyDatabase().add_new_portfolio("Hugo")
+
 portfolios = MyDatabase().get_portfolios()
 
 for portfolio in portfolios:
