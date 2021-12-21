@@ -12,7 +12,7 @@ class MyDatabase:
     
     
     def add_new_portfolio(self,name:str):
-        cnx = mysql.connector.connect(user='hugodemenez', database='database',password='password')
+        cnx = mysql.connector.connect(user='hugodemenez', database='stein',password='password')
         cursor = cnx.cursor()
 
         query = (f"INSERT INTO portfolio values ('{name}')")
@@ -21,7 +21,7 @@ class MyDatabase:
         self.execute_request(cursor, query, cnx)
         
     def get_portfolios(self) -> list:
-        cnx = mysql.connector.connect(user='hugodemenez', database='database',password='password')
+        cnx = mysql.connector.connect(user='hugodemenez', database='stein',password='password')
         cursor = cnx.cursor()
 
         query = 'SELECT * FROM portfolio'
@@ -34,7 +34,7 @@ class MyDatabase:
     
     
     def add_new_value_to_portfolio(self,portfolioName,value):
-        cnx = mysql.connector.connect(user='hugodemenez', database='database',password='password')
+        cnx = mysql.connector.connect(user='hugodemenez', database='stein',password='password')
         cursor = cnx.cursor()
         query = (f"INSERT INTO data values ('{portfolioName}','{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}',{value})")
 
