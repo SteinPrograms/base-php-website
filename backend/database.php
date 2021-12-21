@@ -1,6 +1,6 @@
 <?php
 function cnxDB(){
-    $connexion = mysqli_connect("localhost", "hugodemenez", "password" , "database") ;
+    $connexion = mysqli_connect("localhost", "root", "" , "stein") ;
 
     // si jamais la connexion n'était obtenue
     if ( ! $connexion )  
