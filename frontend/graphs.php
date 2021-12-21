@@ -30,14 +30,13 @@
     <h1>Welcome</h1>
     <?php
     $test = $_SESSION['username'];
-    echo "<p>$test</p>";
+    echo "<h2>$test</h2>";
     ?>
-    
-    <div class="status">
-        <h1>Program Status</h1>
-        <p>Working for : </p>
+    <div class="graph">
+    <?php 
+    database_to_chart();
+    ?>
     </div>
-
 <div class="task-bar">
     <a href="./home.php"><i class="fas fa-home"></i></a>
     <a href="./settings.php"><i class="fas fa-cogs"></i></a>
