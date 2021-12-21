@@ -62,24 +62,7 @@ p{
     height: 500px;
 }
 
-.task-bar {
-    margin: auto;
-    position: fixed;
-    bottom: 10px;
-    width: 95%;
-    height: 50px;
-    background-color:white;
-    text-align: center;
-    font-size:30px;
-    border-radius: 50px;
-}
 
-.task-bar i{
-    padding-right:15px;
-    padding-left:15px;
-    vertical-align: middle;
-    color:gray;
-}
 
 .status{
     margin: 5% auto;
@@ -88,9 +71,11 @@ p{
     height:77px;
     border-radius: 18px;
     
+
 }
 
 .status h1{
+    padding-top: 10px;
     font-weight: bold;
     padding-left: 20px;
     text-align: left;
@@ -99,8 +84,31 @@ p{
 }
 
 .status p {
+    padding-top: 10px;
     padding-left: 20px;
     text-align: left;
     color:white;
-    font-size:18px;
+    font-size:14px;
 }
+
+li{
+    display:inline-block;
+    padding: 0 20px;
+}
+
+svg{
+    width: 40px;
+    height: 40px;
+    color:white;
+}
+.task-bar {
+    text-align:center;
+    position:fixed;
+    margin: auto auto;
+    bottom: 10px;
+    width: 95%;
+    height: 50px;
+    font-size:30px;
+    border-radius: 50px;
+}
+

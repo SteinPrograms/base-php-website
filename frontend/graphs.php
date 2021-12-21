@@ -2,6 +2,7 @@
     ini_set('display_errors', 'on');
     session_start();
     require("../backend/database.php");
+    require("../backend/functions.php");
     if ($_SESSION["auth"]!=1){
         header('Location:../index.php?erreur=1');
     }
@@ -31,16 +32,15 @@
     <?php
     $test = $_SESSION['username'];
     echo "<h2>$test</h2>";
+    
     ?>
     <div class="graph">
     <?php 
     database_to_chart();
+    dock();
     ?>
     </div>
-<div class="task-bar">
-    <a href="./home.php"><i class="fas fa-home"></i></a>
-    <a href="./settings.php"><i class="fas fa-cogs"></i></a>
-</div>
+
 
 </body>
 </html>
