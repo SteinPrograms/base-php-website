@@ -23,15 +23,14 @@
 
 <body>
 <div class="header"> 
-    <img src="../assets/avatar.png" alt="" width="50px">
     <form action='../backend/logout.php'>
         <input type='submit' value='deconnexion'/>
     </form>
 </div>
     <h1>Welcome</h1>
     <?php
-    $test = $_SESSION['username'];
-    echo "<p>$test</p>";
+    $username = $_SESSION['username'];
+    echo "<p>$username</p>";
     
     ?>
     <div class="graph">
