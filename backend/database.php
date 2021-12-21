@@ -1,6 +1,6 @@
 <?php
 function cnxDB(){
-    $connexion = mysqli_connect("localhost", "root", "" , "stein") ;
+    $connexion = mysqli_connect("localhost", "hugodemenez", "password" , "stein") ;
 
     // si jamais la connexion n'était obtenue
     if ( ! $connexion )  
@@ -10,10 +10,6 @@ function cnxDB(){
     else{
         return $connexion;
     }
-}
-
-function test(){
-    echo "Hello world";
 }
 
 function database_to_chart(){
