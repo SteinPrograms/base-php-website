@@ -12,12 +12,8 @@
     
 }
 
-
-
 .skate {
-    width:500px;
-    bottom:-120px;
-    left:-50px;
+    bottom:0px;
     position: fixed
 }
 
