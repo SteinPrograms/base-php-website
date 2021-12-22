@@ -36,10 +36,13 @@
     <div class="graph">
     <?php 
     database_to_chart();
-    dock();
     ?>
     </div>
 
-
+    <footer>
+    <?php
+dock();
+?>
+</footer>
 </body>
 </html>

@@ -31,7 +31,7 @@
     <?php
     $test = $_SESSION['username'];
     echo "<p>$test</p>";
-    dock();
+    
     ?>
     
     <div class="status">
@@ -39,7 +39,11 @@
         <p>Working for : </p>
     </div>
 
-
+<footer>
+    <?php
+dock();
+?>
+</footer>
 
 </body>
 </html>
