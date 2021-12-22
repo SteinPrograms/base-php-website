@@ -1,7 +1,7 @@
 <?php
 
 
-function dock(){
+function dock(active){
     echo('
     <div class="task-bar">
     <ul>

@@ -4,178 +4,87 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
-body{
-    background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
-    font-family: "Poppins", sans-serif;
-}
-
-
-img{
-    height:10vh;
-    position:absolute;
-    bottom:0;
-    right:0;
-    z-index: 100;
-}
-
-.background {
-    background-color: black;
-}
-
-
-button,input,h1{
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
-    color:black;
-    font-size: 16px;
-}
-
-button:hover {
-    color:white;
-    transition:0.1s;
-}
-
-
-
-
 
 *{
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
+    
 }
 
 
-.form-box{
+
+.skate {
+    width:500px;
+    bottom:-120px;
+    left:-50px;
+    position: fixed
+}
+
+
+.background{
+    position:absolute;
     width: 100%;
     height: 100%;
-
+    background:linear-gradient(#8EC5FC, #E0C3FC);
 }
-
-.button-box{
-    top:12%;
-    margin: 0px auto;
-    position:relative;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0.5vh;
-    border-radius: 30px;
-    
-}
-
-.toggle-btn{
-    font-weight: 600;
-    padding-top: 2vh;
-    padding-bottom:4vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    cursor: pointer;
-    background:none;
-    border: 0;
-    outline: none;
-    position: relative;
-    
-}
-
 
 .input-group{
-    text-align: center;
+    text-align:center;
     top: 20vh;
     position:absolute;
-    width: 50%;
-    transition: .5s;
-    
-}
-
-
-.field_group{
-    border-radius: 100px;
-    padding: 0.2vh 0;
-    margin: 1vh auto;
-    border:0;
-    text-align: center;
-    outline: none;
     width: 100%;
-    display: flex;
     overflow: hidden;
-    background: white;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    border-radius: 12px;
-    color:#3872E1; 
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
+.input-group h1{
+    font-weight: 400;
 }
 
+.input-group p{
+    color:#9D9D9D;
+}
 
 .input-field{
-    padding: 0.2vh 0;
-    margin: 1vh auto;
     border:0;
-    text-align: center;
-    outline: none;
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-    background: none;
-    color:#707791; 
+    text-align: left;
+    margin:30px auto;
+    padding:15px 20px;
+    width: 200px;
+    display:flex;
+    flex-direction: row;
+    background: white;
+    border-radius: 5px;
+    color:#000000; 
+}
+
+#eye{
+    right:-250px;
+    top:-65px;
+    position:fixed;
 }
 
 input::placeholder {
-    color: rgb(218, 218, 218);
+    color: #9D9D9D;
+    text-align: left;
     }
 
+
 .submit-btn{
-    padding: 10px;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    margin-top: 50px;
-    outline: none;
-    inset: 0;
-    width:75%;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 12px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    padding: 5px 15px;
+    display:flex;
+    flex-direction: row;
+    margin:0 auto;
+
+    background: #000000;
+    color:#ffffff;
+    border-radius: 10px;
+    border:none;
 }
 
 .check-box{
     font-family: "Poppins", sans-serif;
     opacity:0;
-}
-
-span{
-    color: rgb(119, 119, 119);
-    bottom: 58px;
-    position: absolute; 
-}
-.img-background{
-    height:30%;
-    position:absolute;
-    right:0px;
-    bottom:0px;
-    z-index:-1;
-}
-#connexion{
-    left: 25%;
-
-}
-
-#inscription{
-    left: -100%;
-}
-
-.username_field{
-    display: flex;
-    width: 100%;
-    margin-bottom: 15px;
 }
 
