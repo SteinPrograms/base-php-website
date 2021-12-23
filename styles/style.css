@@ -13,11 +13,8 @@
 }
 
 .skate {
-    display:flex;
-    align-items: center;
-    justify-content: center;
     padding-left: 45px;
-    padding-top:125px;
+    padding-top:50px;
     width: 80%;
 }
 
@@ -47,6 +44,7 @@
 
 .input-group p{
     color:#9D9D9D;
+    margin-bottom:50px;
 }
 
 .input-field{
