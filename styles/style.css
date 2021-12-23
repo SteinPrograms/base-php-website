@@ -13,27 +13,36 @@
 }
 
 .skate {
-    bottom:0px;
-    position: fixed
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 45px;
+    padding-top:125px;
+    width: 80%;
 }
 
 
 .background{
+    
     position:absolute;
     width: 100%;
     height: 100%;
-    background:linear-gradient(#8EC5FC, #E0C3FC);
+    background:#181818;
+    overflow: hidden;
 }
 
 .input-group{
+    margin-top:100px;
     text-align:center;
     top: 20vh;
-    position:absolute;
+    display:flex;
+    flex-direction:column;
     width: 100%;
     overflow: hidden;
 }
 
 .input-group h1{
+    color: #fff;
     font-weight: 400;
 }
 
@@ -55,9 +64,11 @@
 }
 
 #eye{
-    right:-250px;
-    top:-65px;
-    position:fixed;
+    right:-100px;
+    top:-62px;
+    position:relative;
+    color: #000000;
+   
 }
 
 input::placeholder {
@@ -73,7 +84,7 @@ input::placeholder {
     flex-direction: row;
     margin:0 auto;
 
-    background: #000000;
+    background: #7B61FF;
     color:#ffffff;
     border-radius: 10px;
     border:none;
