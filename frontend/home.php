@@ -17,7 +17,7 @@
     <title>PortfolioTracker  | Home</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/home.css?v=1.x">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/Icon.svg"/>
 
 </head>
