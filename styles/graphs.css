@@ -1,42 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 body{
     font-family: 'Readex Pro', sans-serif;
-    background-color: #3D3B46;
+    background-color: #181818;
 }
 
 *{
     margin:0;
     padding:0;
 }
-.header{
-    color:white;
-    font-size: 25px;
-    text-align:right;
+
+.logout{
+    float:right;
 }
 
-.header img{
-    background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 100%;
-}
 
-a:hover.header{
-    transition:1.0s;
-    font-size: 70px;
-}
-a:active {
-
-    text-decoration: none;
-    color: inherit;
-}
-
-button{
-    color:beige;
-}
-
-h1{
+.header h1{
+    padding-top: 50px;
     padding-left: 35px;
     text-align: left;
     color:white;
@@ -44,7 +23,7 @@ h1{
     font-weight: normal;
 }
 
-p{
+.header p{
     font-weight:100;
     text-align: left;
     color:white;
@@ -52,60 +31,36 @@ p{
     font-size:24px;
 }
 
+
 .graph{
     margin: 50px 20px;
-    background: rgba( 255, 255, 255, 0.25 );
+
     border-radius: 10px;
     height: 200px;
 }
 
 
-
-.status{
-    margin: 5% auto;
-    background:#595861;
-    width:333px;
-    height:77px;
-    border-radius: 18px;
-    
-
-}
-
-.status h1{
-    padding-top: 10px;
-    font-weight: bold;
-    padding-left: 20px;
-    text-align: left;
-    font-size:18px;
-
-}
-
-.status p {
-    padding-top: 10px;
-    padding-left: 20px;
-    text-align: left;
-    color:white;
-    font-size:14px;
-}
-
-li{
+.task-bar li{
     display:inline-block;
     padding: 0 20px;
 }
 
-svg{
+.task-bar {
+    text-align:center;
+    width: 100%;
+    position:fixed;
+    bottom: 10px;
+}
+
+.task-bar svg{
     width: 40px;
     height: 40px;
     color:white;
 }
-.task-bar {
-    text-align:center;
-    position:fixed;
-    margin: auto auto;
-    bottom: 10px;
-    width: 95%;
-    height: 50px;
-    font-size:30px;
-    border-radius: 50px;
-}
 
+.task-bar .active{
+    width:50px;
+    height:50px;
+    border-radius: 10px;
+    background:#7B61FF;
+}

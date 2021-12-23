@@ -11,7 +11,7 @@ function chart($name,$dates,$values){
         gradient = '.$name.'.createLinearGradient(0, 0, 0, 450);
     
     
-    gradient.addColorStop(0, "#B4E845");
+    gradient.addColorStop(0, "#FFC898");
     gradient.addColorStop(0.35, "rgba(0, 0, 0, 0)");
 
     new Chart('.$name.',{
@@ -23,7 +23,7 @@ function chart($name,$dates,$values){
                 label: "Evolution du portfolio : '.$name.'",
                 data: '.$values.',
                 backgroundColor: gradient,
-                borderColor: "#B4E845",
+                borderColor: "#FFC898",
                 borderWidth: 1.5,
                 fill: true,
             }]
@@ -37,11 +37,13 @@ function chart($name,$dates,$values){
             responsive: true,
             scales: {
             y: {
+              grid:{display:false},
                 ticks: {
                     color: "white",
                 }
                 },
               x: {
+                grid:{display:false},
                 ticks: {
                   // For a category axis, the val is the index so the lookup via getLabelForValue is needed
                   callback: function(val, index) {
