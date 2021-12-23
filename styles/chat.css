@@ -82,6 +82,8 @@ body{
 }
 
 .chat_box{
+    position:fixed;
+    bottom:80px;
     margin-top:350px;
     margin-left: 35px;
     display:flex;
