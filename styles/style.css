@@ -32,9 +32,8 @@
 }
 
 .input-group{
-    margin-top:100px;
     text-align:center;
-    top: 20vh;
+    margin-top:100px;
     display:flex;
     flex-direction:column;
     width: 100%;
@@ -53,7 +52,7 @@
 .input-field{
     border:0;
     text-align: left;
-    margin:30px auto;
+    margin:10px auto;
     padding:15px 20px;
     width: 200px;
     display:flex;
@@ -65,7 +64,7 @@
 
 #eye{
     right:-100px;
-    top:-62px;
+    top:-40px;
     position:relative;
     color: #000000;
    
