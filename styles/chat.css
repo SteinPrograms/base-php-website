@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+body{
+    background-color: #181818;
+}
+
+*{
+    font-family: 'Readex Pro', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.logout{
+    float:right;
+}
+
+
+.header h1{
+    padding-top: 10px;
+    padding-left: 35px;
+    text-align: left;
+    color:white;
+    font-size:36px;
+    font-weight: normal;
+}
+
+.header p{
+    font-weight:100;
+    text-align: left;
+    color:white;
+    padding-left: 35px;
+    font-size:24px;
+}
+
+
+.header{
+    display:flex;
+    flex-direction:column;
+}
+
+.task-bar li{
+    display:inline-block;
+    padding: 0 20px;
+}
+
+.task-bar {
+    text-align:center;
+    width: 100%;
+    position:fixed;
+    bottom: 10px;
+}
+
+.task-bar svg{
+    width: 40px;
+    height: 40px;
+    color:white;
+}
+
+.task-bar .active{
+    width:50px;
+    height:50px;
+    border-radius: 10px;
+    background:#7B61FF;
+}
+
+.status-light {
+    margin-top: 50px;
+    margin-left: 35px;
+    width:24px;
+    height:24px;
+    border-radius: 50px;
+    background:red;
+    animation: blinker 1.5s linear infinite;
+}
+.status-light p{
+    font-size:10px;
+    padding-top: 5px;
+   
+}
+  
+@keyframes blinker {  
+    50% { opacity: 0; }
+}
+
+.chat_box{
+    margin-top:500px;
+    margin-left: 35px;
+    display:flex;
+    flex-direction:row;
+}
+
+.chat_box input{
+    text-decoration: none;
+    border:none;
+    text-align: left;
+    padding: 10px 75px;
+    padding-left: 15px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.chat_box button{
+    display:flex;
+    text-decoration: none;
+    border:none;
+    cursor: pointer;
+    border-radius: 0px 15px 15px 0px;
+    background:white;
+
+}
+.chat_box button p{
+    
+    position:relative;
+    bottom:-10px;
+    font-weight: 800;
+}

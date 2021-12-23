@@ -40,7 +40,7 @@
         
         <h1>Program Status</h1>
         <div class="little-break"></div>
-        <div class="div status-light"></div>
+        <div class="status-light"></div>
         <p>Working for : </p>
     </div>
     <div class="transactions">
