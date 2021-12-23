@@ -86,32 +86,45 @@ body{
 
 .transactions{
     margin:30px 15px;
+
 }
 .transactions h1{
+    padding-top:20px;
     font-size:18px;
     color:white;
 }
-.transaction p{
+
+
+.transaction .value{
+    top:-35px;
+    right:-150px;
+    position:relative;
     font-size:18px;
     color:white;
     font-weight:100;
 }
 
-.transaction{
-    margin-top:10px;
-    margin-left:20px;
-    flex-wrap: wrap;
-    display:flex;
-    flex-direction:row;
-    color:white;
-}
-
 .transaction .side{
+    font-size:18px;
+    color:white;
+    font-weight:600;
     margin-left:10px;
 }
 
 .transaction .date{
+    font-size:18px;
+    color:white;
+    font-weight:100;
     margin-left:10px;
+}
+
+.transaction{
+    margin-top:10px;
+    margin-left:20px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    color:white;
 }
 
 

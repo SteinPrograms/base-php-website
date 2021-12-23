@@ -14,8 +14,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortfolioTracker  | Home</title>
-    <link rel="stylesheet" href="../styles/home.css?v=1.7">
+    <title>PortfolioTracker  | Chat</title>
+    <link rel="stylesheet" href="../styles/chat.css?v=1.7">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/Icon.svg"/>
 
 </head>
@@ -27,7 +27,7 @@
         </svg>
     </a>
     <div class="header">
-        <h1>Welcome</h1>
+        <h1>Conversation</h1>
         <?php
             $test = $_SESSION['username'];
             echo "<p>$test</p>";
@@ -35,39 +35,12 @@
 
     </div>
     
-    
-    <div class="status">
-        
-        <h1>Program Status</h1>
-        <div class="little-break"></div>
-        <div class="div status-light"></div>
-        <p>Working for : </p>
-    </div>
-    <div class="transactions">
-        <h1>Transaction history</h1>
-        <div class="transaction">
-            <img src="../assets/eth.svg" width='40px'alt="eth">
-            <div class="info"><h1 class='side'>Buy</h1>
-            <div class="full-break"></div>
-            <p class='date'>Sep 30</p>
-            <p class='value'>1,080.00 $</p></div>
-            
-        </div>
-        <div class="transaction">
-            <img src="../assets/btc.svg" width='40px'alt="eth">
-            <div class="info"><h1 class='side'>Buy</h1>
-            <div class="full-break"></div>
-            <p class='date'>Sep 30</p>
-            <p class='value'>750.00 $</p></div>
-            
-        </div>
-    </div>
 <footer>
     <div class="task-bar">
         <ul>
             <li >
                 <a  href="./home.php">
-                    <svg class="active" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <svg  width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
                         <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 19v-8.5a1 1 0 0 0-.4-.8l-7-5.25a1 1 0 0 0-1.2 0l-7 5.25a1 1 0 0 0-.4.8V19a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1z"/>
                     </svg>
                 </a>
@@ -81,7 +54,7 @@
             </li>
             <li>
                 <a href="./chat.php">
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <svg class="active" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12h-.394a2 2 0 0 0-1.11.336L3 14V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v2"/><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10h7a2 2 0 0 1 2 2v9l-2.496-1.664a2 2 0 0 0-1.11-.336H12a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2z"/>
                     </svg>
                 </a>

@@ -2,7 +2,7 @@
     ini_set('display_errors', 'on');
     session_start();
     require("../backend/database.php");
-
+    require("../backend/functions.php");
     if ($_SESSION["auth"]!=1){
         header('Location:../index.php?erreur=1');
     }
@@ -29,11 +29,8 @@
         </svg>
     </a>
     <div class="header">
-        <h1>Welcome</h1>
-        <?php
-            $username = $_SESSION['username'];
-            echo "<p>$username</p>";
-        ?>
+        <h1>Dashboard</h1>
+        <p>Portfolio History</p>
     </div>
     <div class="graph">
     <?php 
