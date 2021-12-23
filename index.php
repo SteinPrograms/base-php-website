@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/style.css" media="screen" type="text/css"/>
     <script src="https://kit.fontawesome.com/ed342dc3ca.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="/assets/Icon.svg"/>
-    <title>PortfolioTracker | Login</title>
+    <title>PortfolioTracker</title>
 </head>
 <body>
     <!-- Affichage du formulaire de connexion et d'inscription -->

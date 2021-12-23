@@ -9,12 +9,12 @@ body{
     padding:0;
 }
 
-a{
+.logout{
     float:right;
 }
 
 
-h1{
+.header h1{
     padding-top: 50px;
     padding-left: 35px;
     text-align: left;
@@ -23,7 +23,7 @@ h1{
     font-weight: normal;
 }
 
-p{
+.header p{
     font-weight:100;
     text-align: left;
     color:white;
@@ -46,6 +46,7 @@ p{
     padding-left: 20px;
     text-align: left;
     font-size:18px;
+    color:white;
 }
 
 .status p {
@@ -64,18 +65,48 @@ li{
 
 .task-bar {
     text-align:center;
+    width: 100%;
     position:fixed;
-    margin: auto auto;
     bottom: 10px;
-    width: 95%;
-    height: 50px;
-    font-size:30px;
-    border-radius: 50px;
-    
 }
 
 .task-bar svg{
     width: 40px;
     height: 40px;
     color:white;
+}
+
+.transactions{
+    margin:30px 15px;
+}
+.transactions h1{
+    font-size:18px;
+    color:white;
+}
+.transaction p{
+    font-size:18px;
+    color:white;
+    font-weight:100;
+}
+
+.transaction{
+    margin-top:10px;
+    margin-left:20px;
+    flex-wrap: wrap;
+    display:flex;
+    flex-direction:row;
+    color:white;
+}
+
+.transaction .side{
+    margin-left:10px;
+}
+
+.transaction .date{
+    margin-left:10px;
+}
+
+
+.break{
+    width: 100%;
 }
