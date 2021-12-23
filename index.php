@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <?php
-    header("Expires: Tue, 01 Jan 2000 00:00:00 GMT");
-    header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
-    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
-    header("Cache-Control: post-check=0, pre-check=0", false);
-    header("Pragma: no-cache");
-    ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
     <link rel="stylesheet" href="./styles/style.css" media="screen" type="text/css"/>
     <script src="https://kit.fontawesome.com/ed342dc3ca.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="#" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/Icon.svg"/>
     <title>PortfolioTracker | Login</title>
 </head>
 <body>
