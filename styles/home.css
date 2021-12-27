@@ -84,7 +84,11 @@ body{
     border-radius: 10px;
     background:#7B61FF;
 }
-
+.transaction-title{
+    text-align:center;
+    color: white;
+    font-size:14px;
+}
 .transactions{
     background: rgba( 255, 255, 255, 0.1 );
     backdrop-filter: blur( 4px );
@@ -92,7 +96,7 @@ body{
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255 );
     text-align:center;
-    margin:30px 15px;
+    margin:5px 15px;
     max-height: 30vh;
     overflow:scroll;
     overflow-x: hidden;

@@ -43,13 +43,13 @@
         <div class="status-light"></div>
         <p>En marche depuis : </p>
     </div>
+    <h1 class='transaction-title'>Historique des transactions</h1>
     <div class="transactions">
-        <h1>Historique des transactions</h1>
         <div class="transaction">
             <img src="../assets/eth.svg" width='40px'alt="eth">
             <div class="info"><h1 class='side'>Buy</h1>
             <div class="full-break"></div>
-            <p class='date'>Sep 30</p>
+            <p class='date'>Nov 25</p>
             <p class='value'>1,080.00 $</p></div>
             
         </div>
@@ -58,8 +58,8 @@
             <div class="info">
                 <h1 class='side'>Buy</h1>
                 <div class="full-break"></div>
-                <p class='date'>Sep 30</p>
-                <p class='value'>750.00 $</p>
+                <p class='date'>Nov 5</p>
+                <p class='value'>550.00 $</p>
             </div>
             
         </div>
@@ -68,7 +68,7 @@
             <div class="info"><h1 class='side'>Buy</h1>
             <div class="full-break"></div>
             <p class='date'>Sep 30</p>
-            <p class='value'>1,080.00 $</p></div>
+            <p class='value'>2,100.00 $</p></div>
             
         </div>
         <div class="transaction">
@@ -76,8 +76,8 @@
             <div class="info">
                 <h1 class='side'>Buy</h1>
                 <div class="full-break"></div>
-                <p class='date'>Sep 30</p>
-                <p class='value'>750.00 $</p>
+                <p class='date'>Sep 22</p>
+                <p class='value'>1,050.00 $</p>
             </div>
             
         </div>
@@ -85,8 +85,8 @@
             <img src="../assets/eth.svg" width='40px'alt="eth">
             <div class="info"><h1 class='side'>Buy</h1>
             <div class="full-break"></div>
-            <p class='date'>Sep 30</p>
-            <p class='value'>1,080.00 $</p></div>
+            <p class='date'>Sep 20</p>
+            <p class='value'>80.00 $</p></div>
             
         </div>
         <div class="transaction">
@@ -94,8 +94,8 @@
             <div class="info">
                 <h1 class='side'>Buy</h1>
                 <div class="full-break"></div>
-                <p class='date'>Sep 30</p>
-                <p class='value'>750.00 $</p>
+                <p class='date'>Oct 22</p>
+                <p class='value'>250.00 $</p>
             </div>
             
         </div>
