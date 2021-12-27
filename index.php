@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
-    <link rel="stylesheet" href="./styles/style.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="./styles/style.css?v0.12" media="screen" type="text/css"/>
     <script src="https://kit.fontawesome.com/ed342dc3ca.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="/assets/Icon.svg"/>
     <title>PortfolioTracker</title>
@@ -16,7 +16,7 @@
         <form id="connexion" class="input-group" action="/backend/login_verification.php" method="POST">
           
         <h1>Bonjour!</h1>
-            <p>Tu nous as manqué,<br>heureux de te revoir</p>
+            <p>Entre ton identifiant et ton mot de passe<br>pour accèder aux informations du programme</p>
             <?php
             if(isset($_GET['erreur'])){
                 $err = $_GET['erreur'];
