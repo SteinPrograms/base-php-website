@@ -11,7 +11,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
    $results = $conn->query("SELECT * FROM user WHERE username = '$username'");
    $row = $results->fetch_assoc();
 
-   if($row["password"]==$password){
+   if($row["username"]==$username && $row["password"]==$password){
       session_start();
       $_SESSION['username'] = $username;
       $_SESSION['auth'] = 1;
