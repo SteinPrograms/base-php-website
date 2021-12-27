@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 
 body{
-    background:#4E54C8;
+    background:#181818;
 }
 *{
     margin: 0;
@@ -45,7 +45,7 @@ body{
 }
 
 #password-reveal p{
-    color:black;
+    color:white;
     font-size:10px;
 }
 
@@ -54,23 +54,24 @@ body{
     border:0;
     text-align: left;
     margin:10px auto;
+
     padding:15px 20px;
+    
     width: 200px;
     display:flex;
     flex-direction: row;
     background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    color:#000000; 
+    color:white; 
 }
 
 #eye{
     margin-right: 10px;
     padding-top:12px;
-    color: #000000;
+    color: white;
 
 }
 
@@ -83,21 +84,19 @@ input::placeholder {
 .submit-btn{
     text-align: center;
     padding: 10px 15px;
+    
     display:flex;
     flex-direction: row;
     margin:5px auto;
     cursor: pointer;
-    background: #FF7700;
+    background: #7B61FF;
     color:#ffffff;
     border-radius: 10px;
     border:none;
 }
 
-.submit-btn:hover{
-    overflow:visible;
-    background: rgba( 245, 166, 35, 0.65 );
-    color:#000;
-}
+
+
 
 .check-box{
     font-family: "Poppins", sans-serif;
@@ -110,8 +109,8 @@ input::placeholder {
     left:0;
     z-index: -1;
     position:absolute;
-    background: #4e54c8;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    background: #181818;  
+    background: -webkit-linear-gradient(to left, #383838, #181818);  
     width: 100vw;
     height:100vh;
     
