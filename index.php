@@ -82,7 +82,6 @@
                 text.innerHTML = "Afficher le mot de passe"
             }
         }
-
     </script>
 
 </body>

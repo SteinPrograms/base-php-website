@@ -152,7 +152,7 @@ body{
     width:24px;
     height:24px;
     border-radius: 50px;
-    background:green;
+    background:red;
     animation: blinker 1.5s linear infinite;
 }
   
