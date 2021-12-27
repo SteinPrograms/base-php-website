@@ -93,6 +93,9 @@ body{
     border: 1px solid rgba( 255, 255, 255 );
     text-align:center;
     margin:30px 15px;
+    max-height: 30vh;
+    overflow:scroll;
+    overflow-x: hidden;
 
 }
 .transactions h1{

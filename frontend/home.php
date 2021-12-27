@@ -63,6 +63,42 @@
             </div>
             
         </div>
+        <div class="transaction">
+            <img src="../assets/eth.svg" width='40px'alt="eth">
+            <div class="info"><h1 class='side'>Buy</h1>
+            <div class="full-break"></div>
+            <p class='date'>Sep 30</p>
+            <p class='value'>1,080.00 $</p></div>
+            
+        </div>
+        <div class="transaction">
+            <img src="../assets/btc.svg" width='40px'alt="eth">
+            <div class="info">
+                <h1 class='side'>Buy</h1>
+                <div class="full-break"></div>
+                <p class='date'>Sep 30</p>
+                <p class='value'>750.00 $</p>
+            </div>
+            
+        </div>
+        <div class="transaction">
+            <img src="../assets/eth.svg" width='40px'alt="eth">
+            <div class="info"><h1 class='side'>Buy</h1>
+            <div class="full-break"></div>
+            <p class='date'>Sep 30</p>
+            <p class='value'>1,080.00 $</p></div>
+            
+        </div>
+        <div class="transaction">
+            <img src="../assets/btc.svg" width='40px'alt="eth">
+            <div class="info">
+                <h1 class='side'>Buy</h1>
+                <div class="full-break"></div>
+                <p class='date'>Sep 30</p>
+                <p class='value'>750.00 $</p>
+            </div>
+            
+        </div>
     </div>
     <div class="area" >
         <ul class="circles">
