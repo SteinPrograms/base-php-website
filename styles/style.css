@@ -15,7 +15,7 @@ body{
     display:flex;
     margin: 0 auto;
     padding-left: 45px;
-    padding-top:10px;
+    padding-top:30px;
 }
 
 
@@ -41,8 +41,16 @@ body{
 
 #password-reveal{
     display: flex;
-    margin:20px auto;
+    margin:0px auto;
+    margin-top:10px;
 }
+
+#password-reveal p{
+    color:black;
+    font-size:10px;
+}
+
+
 .input-field{
     border:0;
     text-align: left;
@@ -62,7 +70,7 @@ body{
 
 #eye{
     margin-right: 10px;
-    padding-top:18px;
+    padding-top:12px;
     color: #000000;
 
 }
@@ -75,10 +83,10 @@ input::placeholder {
 
 .submit-btn{
     text-align: center;
-    padding: 5px 15px;
+    padding: 10px 15px;
     display:flex;
     flex-direction: row;
-    margin:30px auto;
+    margin:5px auto;
     cursor: pointer;
     background: #FF7700;
     color:#ffffff;
@@ -87,6 +95,8 @@ input::placeholder {
 }
 
 .submit-btn:hover{
+    overflow:visible;
+    background: rgba( 245, 166, 35, 0.65 );
     color:#000;
 }
 
