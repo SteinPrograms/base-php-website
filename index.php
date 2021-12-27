@@ -27,11 +27,14 @@
             <input type="text" class="input-field" placeholder="Identifiant" name="username" required>
 
             <input id="password" type="password" class="input-field" placeholder="Mot de passe" name="password">
-            <i id="eye" class="fas fa-eye" onclick="reveal_password()"></i>
+            <div id="password-reveal" onclick="reveal_password()">
+                <i id="eye" class="fas fa-eye"></i>
+                <p id="password-reveal-text">Afficher le mot de passe</p>
+            </div>
             <button type="submit" class="submit-btn">Connexion</button>
             
         </form>
-        <svg class='skate' height='32vh'style='position:fixed;bottom:0px;'viewBox="0 0 390 291" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class='skate' height='32vh' viewBox="0 0 390 291" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M321.411 240.527C321.411 240.527 306.603 245.969 299.626 258.646C292.649 271.322 296.144 286.433 296.144 286.433C296.144 286.433 310.952 280.991 317.929 268.315C324.906 255.638 321.411 240.527 321.411 240.527Z" fill="#3F3D56"/>
             <path d="M341.302 259.429C341.302 259.429 336.45 274.176 323.854 281.601C311.257 289.025 295.686 286.316 295.686 286.316C295.686 286.316 300.537 271.569 313.133 264.144C325.73 256.72 341.302 259.429 341.302 259.429Z" fill="#A5A6F6"/>
             <path d="M446 289.9H-57V291H446V289.9Z" fill="#2F2E41"/>
@@ -65,15 +68,18 @@
     </div >
         <script>
         function reveal_password() {
+            var text = document.getElementById('password-reveal-text')
+            
             var x = document.getElementById("password");
             var y = document.getElementById("eye");
             if (x.type === "password") {
                 x.type = "text";
                 y.className = "fas fa-eye-slash";
+                text.innerHTML = "Masquer le mot de passe"
             } else {
                 x.type = "password";
                 y.className = "fas fa-eye";
-                
+                text.innerHTML = "Afficher le mot de passe"
             }
         }
 
