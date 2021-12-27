@@ -29,8 +29,8 @@
         </svg>
     </a>
     <div class="header">
-        <h1>Dashboard</h1>
-        <p>Portfolio History</p>
+        <h1>Tableau de bord</h1>
+        <p>Historique du portefeuille</p>
     </div>
     <div class="graph">
     <?php 

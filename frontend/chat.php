@@ -15,7 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
     <title>PortfolioTracker  | Chat</title>
-    <link rel="stylesheet" href="../styles/chat.css?v=1.1">
+    <link rel="stylesheet" href="../styles/chat.css?v=1.">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/Icon.svg"/>
 
 </head>
@@ -36,7 +36,7 @@
     </div>
     
     <div class="chat_box">
-        <input type="text" placeholder="Add your message">
+        <input type="text" placeholder="Add your message" size='100vw'>
         <button><p>Send</p> 
         <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_5_148)">

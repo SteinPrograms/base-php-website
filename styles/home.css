@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 body{
-    background-color: #181818;
+    background-color: #4E54C8;
 }
 
 *{
@@ -10,6 +10,7 @@ body{
 }
 
 .logout{
+    padding-top:20px;
     float:right;
 }
 
@@ -36,7 +37,7 @@ body{
     flex-wrap: wrap;
     display:flex;
     margin: 5% auto;
-    border:1px white solid;
+    border:2px white solid;
     width:333px;
     height:77px;
     border-radius: 10px;
@@ -85,10 +86,13 @@ body{
 }
 
 .transactions{
+    
+    text-align:center;
     margin:30px 15px;
 
 }
 .transactions h1{
+    text-align:center;
     padding-top:20px;
     font-size:18px;
     color:white;
@@ -96,9 +100,9 @@ body{
 
 
 .transaction .value{
-    top:-35px;
-    right:-150px;
-    position:relative;
+    position:absolute;
+    right:0px;
+    top:30px;
     font-size:18px;
     color:white;
     font-weight:100;
@@ -108,19 +112,21 @@ body{
     font-size:18px;
     color:white;
     font-weight:600;
-    margin-left:10px;
+    
 }
 
 .transaction .date{
     font-size:18px;
     color:white;
     font-weight:100;
-    margin-left:10px;
+    padding-left: 20px;
 }
 
 .transaction{
+    position:relative;
+    width: 80vw;
     margin-top:10px;
-    margin-left:20px;
+    margin:0 auto;
     display:flex;
     flex-wrap: wrap;
     flex-direction:row;
@@ -133,7 +139,7 @@ body{
 }
 
 .little-break{
-    width: 40%;
+    width: 60%;
 }
 
 .status-light {

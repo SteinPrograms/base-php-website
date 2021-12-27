@@ -15,7 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
     <title>PortfolioTracker  | Home</title>
-    <link rel="stylesheet" href="../styles/home.css?v=1.7">
+    <link rel="stylesheet" href="../styles/home.css?v=1.">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/Icon.svg"/>
 
 </head>
@@ -27,7 +27,7 @@
         </svg>
     </a>
     <div class="header">
-        <h1>Welcome</h1>
+        <h1>Bienvenue</h1>
         <?php
             $test = $_SESSION['username'];
             echo "<p>$test</p>";
@@ -38,13 +38,13 @@
     
     <div class="status">
         
-        <h1>Program Status</h1>
+        <h1>Status</h1>
         <div class="little-break"></div>
         <div class="status-light"></div>
-        <p>Working for : </p>
+        <p>En marche depuis : </p>
     </div>
     <div class="transactions">
-        <h1>Transaction history</h1>
+        <h1>Historique des transactions</h1>
         <div class="transaction">
             <img src="../assets/eth.svg" width='40px'alt="eth">
             <div class="info"><h1 class='side'>Buy</h1>
@@ -55,10 +55,12 @@
         </div>
         <div class="transaction">
             <img src="../assets/btc.svg" width='40px'alt="eth">
-            <div class="info"><h1 class='side'>Buy</h1>
-            <div class="full-break"></div>
-            <p class='date'>Sep 30</p>
-            <p class='value'>750.00 $</p></div>
+            <div class="info">
+                <h1 class='side'>Buy</h1>
+                <div class="full-break"></div>
+                <p class='date'>Sep 30</p>
+                <p class='value'>750.00 $</p>
+            </div>
             
         </div>
     </div>
