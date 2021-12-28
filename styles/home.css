@@ -9,13 +9,10 @@ body{
     padding:0;
 }
 
-
-
 .logout{
     padding-top:20px;
     float:right;
 }
-
 
 .header h1{
     padding-top: 50px;
@@ -33,7 +30,6 @@ body{
     padding-left: 35px;
     font-size:24px;
 }
-
 
 .status{
     background: rgba( 255, 255, 255, 0.05 );
@@ -66,13 +62,12 @@ body{
     font-size:14px;
 }
 
-
-
 .transaction-title{
     text-align:center;
     color: white;
     font-size:14px;
 }
+
 .transactions{
     background: rgba( 255, 255, 255, 0.05 );
     backdrop-filter: blur(10px);
@@ -81,18 +76,17 @@ body{
     border: 1px solid rgba( 255, 255, 255 );
     text-align:center;
     margin:5px 15px;
-    max-height: 30vh;
+    max-height: 42vh;
     overflow:scroll;
     overflow-x: hidden;
-
 }
+
 .transactions h1{
     text-align:center;
     padding-top:20px;
     font-size:18px;
     color:white;
 }
-
 
 .transaction .value{
     position:absolute;
@@ -107,7 +101,6 @@ body{
     font-size:18px;
     color:white;
     font-weight:600;
-    
 }
 
 .transaction .date{
@@ -129,7 +122,6 @@ body{
     color:white;
 }
 
-
 .full-break{
     width: 100%;
 }
@@ -146,9 +138,7 @@ body{
     background:red;
     animation: blinker 1.5s linear infinite;
 }
-  
+
 @keyframes blinker {  
     50% { opacity: 0; }
 }
-
-

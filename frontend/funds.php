@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../styles/funds.css?v=2.0">
     <link rel="stylesheet" href="../styles/taskbar.css?v=2.">
     <link rel="stylesheet" href="../styles/background.css?v=2.">
-    <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/Icon.svg"/>
+    <title>PortfolioTracker  | Funds</title>
 </head>
 <body>
 <a class='logout' href="../backend/logout.php" >
