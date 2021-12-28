@@ -46,7 +46,27 @@
         <p>En marche depuis : </p>
     </div>
     <h1 class='transaction-title'>Historique des transactions</h1>
+    
     <div class="transactions">
+    <?php 
+        $requete = "select * from trading";
+        $result = mysqli_query(cnxDB(),$requete);
+        if ( $result == FALSE ){echo "Connexion à la base de données impossible " ;return;}
+        if  ( mysqli_num_rows($result) > 0){
+            while ($row = mysqli_fetch_assoc($result)){
+                echo ("
+                <div class='transaction'>
+                    <img src='../assets/".$row['asset'].".svg' width='40px'alt=".$row['asset'].">
+                    <div class='info'><h1 class='side'>".$row['side']."</h1>
+                    <div class='full-break'></div>
+                    <p class='date'>".$row['date']."</p>
+                    <p class='value'>".$row['value']." $</p></div>
+                </div>"
+            );
+            }}
+        else{echo "Il n'y a pas de transaction à afficher";}
+    ?>
+
         <div class="transaction">
             <img src="../assets/eth.svg" width='40px'alt="eth">
             <div class="info"><h1 class='side'>Buy</h1>
