@@ -50,9 +50,9 @@
     <div class="transactions">
     <?php 
         $requete = "select * from trading";
-        $result = mysqli_query(cnxDB(),$requete);
-        if ( $result == FALSE ){echo "Connexion à la base de données impossible " ;return;}
-        if  ( mysqli_num_rows($result) > 0){
+        $result = @mysqli_query(cnxDB(),$requete);
+        if ( $result == FALSE ){echo "Connexion à la base de données impossible " ;}
+        elseif  ( mysqli_num_rows($result) > 0){
             while ($row = mysqli_fetch_assoc($result)){
                 echo ("
                 <div class='transaction'>
