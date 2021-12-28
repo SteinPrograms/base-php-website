@@ -24,7 +24,7 @@ function database_to_chart(){
     
     if ($database == false) 
         {
-            echo "Erreur de connexion : " .  mysqli_connect_errno()  ;
+            echo "Erreur de connexion à la base de données " ;
             return;
         }
                         

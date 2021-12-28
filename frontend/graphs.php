@@ -36,7 +36,7 @@
     </div>
     <div class="graph">
     <?php 
-    database_to_chart();
+    @database_to_chart();
     ?>
     </div>
     <div class="area" >

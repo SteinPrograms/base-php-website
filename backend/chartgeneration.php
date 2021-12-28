@@ -30,7 +30,7 @@ function chart($name,$dates,$values){
             pointBorderWidth: 3,
             pointHoverBorderColor: "rgba(255, 255, 255, 0.2)",
             pointHoverBorderWidth: 10,
-            lineTension: 0,
+            lineTension: 0.3,
           }]},
           options: {
             plugins: {
