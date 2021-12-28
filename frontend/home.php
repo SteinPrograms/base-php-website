@@ -59,7 +59,7 @@
                     <img src='../assets/".$row['asset'].".svg' width='40px'alt=".$row['asset'].">
                     <div class='info'><h1 class='side'>".$row['side']."</h1>
                     <div class='full-break'></div>
-                    <p class='date'>".$row['date']."</p>
+                    <p class='date'>".date('M d à H:i:s',strtotime($row['date']))."</p>
                     <p class='value'>".$row['value']." $</p></div>
                 </div>"
             );
