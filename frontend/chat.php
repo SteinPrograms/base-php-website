@@ -16,6 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
     <title>PortfolioTracker  | Chat</title>
     <link rel="stylesheet" href="../styles/chat.css?v=2.0">
+    <link rel="stylesheet" href="../styles/taskbar.css?v=2.">
+    <link rel="stylesheet" href="../styles/background.css?v=2.">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/Icon.svg"/>
 
 </head>
@@ -27,16 +29,17 @@
         </svg>
     </a>
     <div class="header">
-        <div class="status-light"><p>Offline</p></div>
+        <div class="status"><div class="status-light"></div><p>Hors ligne</p></div>
+        
         <h1>Conversation</h1>
         <?php
             $friend_name = "Alfred";
-            echo "<p>Chatting with $friend_name</p>";
+            echo "<p>Avec $friend_name</p>";
         ?>
     </div>
     
     <div class="chat_box">
-        <input type="text" placeholder="Add your message" size='100vw'>
+        <input type="text" placeholder="Aa" size='100vw'>
         <button><p>Send</p> 
         <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_5_148)">

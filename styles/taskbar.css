@@ -1,0 +1,23 @@
+.task-bar li{
+    display:inline-block;
+    padding: 0 20px;
+}
+
+.task-bar {
+    text-align:center;
+    width: 100%;
+    position:fixed;
+    bottom: 10px;
+}
+
+.task-bar svg{
+    width: 40px;
+    height: 40px;
+    color:white;
+    border-radius: 10px;
+    padding:5px 5px;
+}
+
+.task-bar .active{
+    background:#7B61FF;
+}
