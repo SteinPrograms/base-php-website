@@ -43,7 +43,7 @@
         <h1>Status</h1>
         <div class="little-break"></div>
         <div class="status-light"></div>
-        <p>En marche depuis : </p>
+        <p>En marche depuis : <p id="runtime"></p></p>
     </div>
     <h1 class='transaction-title'>Historique des transactions</h1>
     
@@ -171,5 +171,35 @@
     </div>
 </footer>
 
+<script>
+/*
+$requete = "select * from program";$result = @mysqli_query(cnxDB(),$requete);if ( $result == FALSE ){echo(date('Y-m-d H:i:s'));}elseif  ( mysqli_num_rows($result) > 0){while ($row = mysqli_fetch_assoc($result)){echo(strtotime($result['runtime'],'Y-m-d H:i:s'));}}else{echo(date('Y-m-d H:i:s'));}
+*/
+    
+    
+    function currentTime(start) {
+        var start = new Date(Date.parse("<?php $requete = "select * from program";$result = @mysqli_query(cnxDB(),$requete);if ( $result == FALSE ){echo(date('Y-m-d H:i:s'));}elseif  ( mysqli_num_rows($result) > 0){while ($row = mysqli_fetch_assoc($result)){echo(date('Y-m-d H:i:s'));}}else{echo(date('Y-m-d H:i:s'));}?>"));
+        var date = new Date(); /* creating object of Date class */
+        date = updateTime(date);
+        var hour = date.getHours();
+    var min = date.getMinutes();
+    var sec = date.getSeconds();
+        document.getElementById("runtime").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
+        var t = setTimeout(function(){ currentTime(start) }, 1000); /* setting timer */
+  }
+  
+  function updateTime(k) {
+    if (k < 10) {
+      return "0" + k;
+    }
+    else {
+      return k;
+    }
+  }
+        
+
+
+    currentTime(); /* calling currentTime() function to initiate the process */
+</script>
 </body>
 </html>
