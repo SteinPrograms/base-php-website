@@ -49,7 +49,7 @@
     
     <div class="transactions">
     <?php 
-        $requete = "select * from trading";
+        $requete = "select * from trading ORDER  BY date DESC";
         $result = @mysqli_query(cnxDB(),$requete);
         if ( $result == FALSE ){echo "Connexion à la base de données impossible " ;}
         elseif  ( mysqli_num_rows($result) > 0){
