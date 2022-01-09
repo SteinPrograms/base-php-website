@@ -32,21 +32,6 @@
             <button type="submit" class="submit-btn">Connexion</button>
             
         </form>
-
-        <div class="area" >
-            <ul class="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-            </ul>
-    </div >
         <script>
         function reveal_password() {
             var text = document.getElementById('password-reveal-text')
