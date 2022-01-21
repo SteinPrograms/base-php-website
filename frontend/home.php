@@ -121,7 +121,7 @@
                 echo("var start = 'no result';");
                 }
         ?>
-        start = Date.parse(start);
+        
         var date = new Date(); /* creating object of Date class */
         date = updateTime(date);
         var hour = date.getHours();
