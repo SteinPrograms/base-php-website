@@ -19,7 +19,7 @@ function change_mode(){
 
     if (newColorScheme == "dark" ){
         root.style.setProperty('--bg-color', "#181818");
-        root.style.setProperty('--accent-color', "#FFFFFF");
+        root.style.setProperty('--accent-color', "255, 255, 255");
         root.style.setProperty('--primary-color', "#618DFF");
         root.style.setProperty('--secondary-color', "#FF7700");
     }
