@@ -32,13 +32,11 @@ body{
 }
 
 .status{
-    background: rgba( 255, 255, 255, 0.05 );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: gray;
     flex-wrap: wrap;
     display:flex;
     margin: 5% auto;
-    border:2px var(--bg-color) solid;
+    border:1px var(--accent-color) solid;
     width:333px;
     height:77px;
     border-radius: 10px;
@@ -69,11 +67,9 @@ body{
 }
 
 .transactions{
-    background: rgba( 255, 255, 255, 0.05 );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: gray;
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255 );
+    border: 1px solid var(--accent-color);
     text-align:center;
     margin:5px 15px;
     max-height: 42vh;
