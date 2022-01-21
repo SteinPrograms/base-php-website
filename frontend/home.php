@@ -105,26 +105,21 @@
 </footer>
 
 <script>
-/*
-$requete = "select * from program";$result = @mysqli_query(cnxDB(),$requete);if ( $result == FALSE ){echo(date('Y-m-d H:i:s'));}elseif  ( mysqli_num_rows($result) > 0){while ($row = mysqli_fetch_assoc($result)){echo(strtotime($result['runtime'],'Y-m-d H:i:s'));}}else{echo(date('Y-m-d H:i:s'));}
-*/
-    
-    
-    function currentTime(start) {
-         <?php 
-        $requete = "select * from program";
-        $result = @mysqli_query(cnxDB(),$requete);
-        if ( $result == FALSE ){
-            echo("var start =".date('Y-m-d H:i:s').";");
-        }
-        elseif  ( mysqli_num_rows($result) > 0){
-            while ($row = mysqli_fetch_assoc($result)){
+    function currentTime() {
+        <?php 
+            $requete = "select * from program";
+            $result = @mysqli_query(cnxDB(),$requete);
+            if ( $result == FALSE ){
                 echo("var start =".date('Y-m-d H:i:s').";");
             }
-        }
-        else{
-            echo("var start =".date('Y-m-d H:i:s').";");
+            elseif  ( mysqli_num_rows($result) > 0){
+                while ($row = mysqli_fetch_assoc($result)){
+                    echo("var start =".date('Y-m-d H:i:s').";");
+                }
             }
+            else{
+                echo("var start =".date('Y-m-d H:i:s').";");
+                }
         ?>
         var date = new Date(); /* creating object of Date class */
         date = updateTime(date);
@@ -132,7 +127,7 @@ $requete = "select * from program";$result = @mysqli_query(cnxDB(),$requete);if 
         var min = date.getMinutes();
         var sec = date.getSeconds();
         document.getElementById("runtime").innerText = start; /* adding time to the div */
-        var t = setTimeout(function(){ currentTime(start) }, 1000); /* setting timer */
+        var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
   }
   
   function updateTime(k) {
