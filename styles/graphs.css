@@ -38,9 +38,7 @@ body{
     margin-top:20px;
     margin-left: 5px;
     margin-right: 5px;
-    background: rgba( 255, 255, 255, 0.05 );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: gray;
     border-radius: 10px;
 }
 
