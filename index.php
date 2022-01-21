@@ -12,13 +12,6 @@
     <title>PortfolioTracker</title>
 </head>
 <body onload="change_mode()">
-    <!-- Dark Mode / Light Mode switch -->
-    <div class="mode_switch">
-    <label class="switch">
-        <input id="mode" type="checkbox" onClick="change_mode()">
-        <span class="slider round"></span>
-    </label>
-    </div>
     <!-- Affichage du formulaire de connexion et d'inscription -->
     <form id="connexion" class="input-group" action="/backend/login_verification.php" method="POST">      
     <h1>Bonjour!</h1>
@@ -39,6 +32,9 @@
         </div>
         <button type="submit" class="submit-btn">Connexion</button>
     </form>
+    <script>
+        window.setInterval(change_mode(), 5000);
+    </script>
 </body>
 </html>
 
