@@ -19,7 +19,6 @@
     <title>PortfolioTracker  | Chat</title>
     <link rel="stylesheet" href="../styles/chat.css?v=2.05">
     <link rel="stylesheet" href="../styles/taskbar.css?v=2.5">
-    <link rel="stylesheet" href="../styles/background.css?v=25.5">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/Icon.svg"/>
 
 </head>

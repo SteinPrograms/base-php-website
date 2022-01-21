@@ -17,7 +17,6 @@
     <title>PortfolioTracker  | Home</title>
     <link rel="stylesheet" href="../styles/home.css?v=2.2">
     <link rel="stylesheet" href="../styles/taskbar.css?v=2.5">
-    <link rel="stylesheet" href="../styles/background.css?v=2.5">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/Icon.svg"/>
 
 </head>

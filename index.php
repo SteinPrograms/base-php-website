@@ -6,6 +6,7 @@
     <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
     <link rel="stylesheet" href="./styles/style.css?v=2.1" media="screen" type="text/css"/>
     <script src="https://kit.fontawesome.com/ed342dc3ca.js" crossorigin="anonymous"></script>
+    <script src="/styles/index.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="/assets/Icon.svg"/>
     <link rel="stylesheet" href="../styles/background.css?v=23.">
     <title>PortfolioTracker</title>
