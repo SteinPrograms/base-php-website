@@ -1,5 +1,7 @@
 
 
+
+
 function change_mode(){
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         var newColorScheme = "dark";
@@ -8,13 +10,6 @@ function change_mode(){
     else{
         var newColorScheme = "light";
     }
-
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-        var newColorScheme = event.matches ? "dark" : "light";
-    });
-    
-
-
     var body = document.querySelector('body');
     var h1 = document.querySelector('h1');
     var password_text = document.querySelector('#password-reveal-text');
@@ -61,3 +56,6 @@ function reveal_password() {
     }
 }
 
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    change_mode();
+});
