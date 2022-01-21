@@ -59,3 +59,4 @@ function reveal_password() {
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     change_mode();
 });
+

@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
-    <link rel="stylesheet" href="./styles/style.css?v=2.251" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="./styles/style.css?v=51" media="screen" type="text/css"/>
     <script src="https://kit.fontawesome.com/ed342dc3ca.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="/scripts/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
     <link rel="shortcut icon" type="image/x-icon" href="/assets/Icon.svg"/>
     <title>PortfolioTracker</title>
 </head>
 <body onload="change_mode()">
     <!-- Affichage du formulaire de connexion et d'inscription -->
     <form id="connexion" class="input-group" action="/backend/login_verification.php" method="POST">      
-    <h1>Bonjour!</h1>
-    <p>Bienvenue sur le site<br>de gestion du programme</p>
+    <div class="title"><h1>Bonjour!</h1></div>
+    <div class="subtitle"><p>Bienvenue sur le site<br>de gestion du programme</p></div>
+    
     <?php
         if(isset($_GET['erreur'])){
             $err = $_GET['erreur'];
@@ -33,6 +35,11 @@
         <button type="submit" class="submit-btn">Connexion</button>
     </form>
 </body>
+<footer>
+    <script src="/scripts/index.js"></script>
+    <script src="/scripts/animation.js"></script>
+</footer>
+
 </html>
 
 
