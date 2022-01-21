@@ -113,9 +113,9 @@ $requete = "select * from program";$result = @mysqli_query(cnxDB(),$requete);if 
         var date = new Date(); /* creating object of Date class */
         date = updateTime(date);
         var hour = date.getHours();
-    var min = date.getMinutes();
-    var sec = date.getSeconds();
-        document.getElementById("runtime").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
+        var min = date.getMinutes();
+        var sec = date.getSeconds();
+        document.getElementById("runtime").innerText = start; /* adding time to the div */
         var t = setTimeout(function(){ currentTime(start) }, 1000); /* setting timer */
   }
   
