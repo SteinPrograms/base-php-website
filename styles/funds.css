@@ -12,4 +12,5 @@ body{
 .logout{
     padding-top:20px;
     float:right;
+    color:var(--accent-color);
 }
