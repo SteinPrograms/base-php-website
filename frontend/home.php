@@ -110,15 +110,15 @@
             $requete = "select * from program";
             $result = @mysqli_query(cnxDB(),$requete);
             if ( $result == FALSE ){
-                echo("var start =".date('Y-m-d H:i:s').";");
+                echo("var start = 'ok';");
             }
             elseif  ( mysqli_num_rows($result) > 0){
                 while ($row = mysqli_fetch_assoc($result)){
-                    echo("var start =".date('Y-m-d H:i:s').";");
+                    echo("var start = 'ok';");
                 }
             }
             else{
-                echo("var start =".date('Y-m-d H:i:s').";");
+                echo("var start = 'ok';");
                 }
         ?>
         var date = new Date(); /* creating object of Date class */
