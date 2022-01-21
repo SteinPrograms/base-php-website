@@ -109,7 +109,7 @@ body{
 .send_icon svg{
     padding-right: 10px;
     position:relative;
-    top:-2px;
+    top:2px;
 }
 
 .send_icon{
