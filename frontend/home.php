@@ -128,7 +128,7 @@
         var hour = date.getHours();
         var min = date.getMinutes();
         var sec = date.getSeconds();
-        document.getElementById("runtime").innerText = start_date;
+        document.getElementById("runtime").innerText = date-start_date;
         var t = setTimeout(function(){ currentTime() }, 1000);
   }
   
