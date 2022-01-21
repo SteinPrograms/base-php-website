@@ -10,32 +10,24 @@ function change_mode(){
     else{
         var newColorScheme = "light";
     }
-    var body = document.querySelector('body');
-    var h1 = document.querySelector('h1');
-    var password_text = document.querySelector('#password-reveal-text');
-    var input_fields = document.querySelectorAll('.input-field');
+
+
     
-    var eye = document.querySelector('#eye');
-    if (newColorScheme == "light" ){
-        body.style.background = '#fff';
-        h1.style.color = '#000';
-        password_text.style.color = '#000';
-        eye.style.color = '#000';
-        input_fields.forEach(function colorchange(input_field){
-            input_field.style.background = '#000';
-            input_field.style.color = '#fff';
-        });
-        
+
+
+    var root = document.querySelector(':root');
+
+    if (newColorScheme == "dark" ){
+        root.style.setProperty('--bg-color', "#181818");
+        root.style.setProperty('--accent-color', "#FFFFFF");
+        root.style.setProperty('--primary-color', "#618DFF");
+        root.style.setProperty('--secondary-color', "#FF7700");
     }
     else{
-        input_fields.forEach(function colorchange(input_field){
-            input_field.style.background = '#fff';
-            input_field.style.color = '#000';
-        });
-        body.style.background = '#000';
-        h1.style.color = '#fff';
-        password_text.style.color = '#fff';
-        eye.style.color = '#fff';
+        root.style.setProperty('--bg-color', "#FFF");
+        root.style.setProperty('--accent-color', "#181818");
+        root.style.setProperty('--primary-color', "#618DFF");
+        root.style.setProperty('--secondary-color', "#FF7700");
     }
     
 }
