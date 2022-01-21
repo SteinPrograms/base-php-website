@@ -97,6 +97,7 @@ body{
 
 }
 .chat_box button p{
+    left:2px;
     position:relative;
     bottom:-10px;
     font-weight: 800;
