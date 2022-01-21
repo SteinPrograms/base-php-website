@@ -16,6 +16,7 @@
         </svg>
     </a>
 <footer>
+<script src="/scripts/index.js"></script>
     <div class="task-bar">
     <ul>
         <li>
