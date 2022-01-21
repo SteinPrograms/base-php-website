@@ -1,4 +1,13 @@
 :root{
-    --bg-color : #fff;
-    --primary-color : #fff;
+    --bg-color : #181818;
+    --light-color : #FFFFFF;
+    --primary-color : #618DFF;
+    --secondary-color : #FF7700;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --bg-color : #FAFAFA;
+        --primary-color : #fff;
+    }
 }
