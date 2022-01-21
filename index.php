@@ -36,7 +36,7 @@
         </form>
         <script>
             const tl = gsap.timeline({duration:3});
-            tl.fromTo('.input-group', {scale:1.3});
+            tl.fromTo('.input-field', {scale:2});
         </script>
         <script>
 
