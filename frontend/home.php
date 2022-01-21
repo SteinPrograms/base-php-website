@@ -149,7 +149,7 @@
         var sec = date.getSeconds();
 
         var diff = dateDiff(start_date,date);
-        document.getElementById("runtime").innerText = " il y a "+diff.day+" jours, "+diff.hour+" heures, "+diff.min+" minutes et "+diff.sec+" secondes";
+        document.getElementById("runtime").innerText = diff.day+" d, "+diff.hour+" h, "+diff.min+" m "+diff.sec+" s";
         var t = setTimeout(function(){ currentTime() }, 1000);
   }
   
