@@ -109,7 +109,7 @@ $requete = "select * from program";$result = @mysqli_query(cnxDB(),$requete);if 
     
     
     function currentTime(start) {
-        var start = new Date(Date.parse("<?php $requete = "select * from program";$result = @mysqli_query(cnxDB(),$requete);if ( $result == FALSE ){echo(date('Y-m-d H:i:s'));}elseif  ( mysqli_num_rows($result) > 0){while ($row = mysqli_fetch_assoc($result)){echo(date('Y-m-d H:i:s'));}}else{echo(date('Y-m-d H:i:s'));}?>"));
+        var start = "<?php $requete = "select * from program";$result = @mysqli_query(cnxDB(),$requete);if ( $result == FALSE ){echo(date('Y-m-d H:i:s'));}elseif  ( mysqli_num_rows($result) > 0){while ($row = mysqli_fetch_assoc($result)){echo(date('Y-m-d H:i:s'));}}else{echo(date('Y-m-d H:i:s'));}?>"));
         var date = new Date(); /* creating object of Date class */
         date = updateTime(date);
         var hour = date.getHours();
