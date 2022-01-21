@@ -100,19 +100,16 @@ body{
     position:relative;
     bottom:-10px;
     font-weight: 800;
+    color: var(--bg-color);
 }
 
 .message_field{
     background:var(--accent-color);
 }
 
-.send_icon svg{
+.chat_box button svg{
     margin-right: 30px;
     position:relative;
     top:5px;
 }
 
-.send_icon{
-    color: var(--bg-color);
-
-}
