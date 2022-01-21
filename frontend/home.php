@@ -23,21 +23,6 @@
 
 <body onload="change_mode()">    
 
-    <?php 
-    $requete = "select * from program";
-    $result = @mysqli_query(cnxDB(),$requete);
-    if ( $result == FALSE ){
-        echo(date('Y-m-d H:i:s'));
-    }
-    elseif  ( mysqli_num_rows($result) > 0){
-        while ($row = mysqli_fetch_assoc($result)){
-            echo(date('Y-m-d H:i:s'));
-        }
-    }
-    else{
-        echo(date('Y-m-d H:i:s'));
-        }
-    ?>
         
     <a class='logout' href="../backend/logout.php" >
         <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,7 +111,22 @@ $requete = "select * from program";$result = @mysqli_query(cnxDB(),$requete);if 
     
     
     function currentTime(start) {
-        var start = var date = new Date(); /* creating object of Date class */
+         <?php 
+        $requete = "select * from program";
+        $result = @mysqli_query(cnxDB(),$requete);
+        if ( $result == FALSE ){
+            echo("var start =".date('Y-m-d H:i:s').";");
+        }
+        elseif  ( mysqli_num_rows($result) > 0){
+            while ($row = mysqli_fetch_assoc($result)){
+                echo("var start =".date('Y-m-d H:i:s').";");
+            }
+        }
+        else{
+            echo("var start =".date('Y-m-d H:i:s').";");
+            }
+        ?>
+        var date = new Date(); /* creating object of Date class */
         date = updateTime(date);
         var hour = date.getHours();
         var min = date.getMinutes();
