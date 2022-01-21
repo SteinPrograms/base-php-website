@@ -108,10 +108,9 @@ body{
 }
 
 .chat_box button svg{
-    fill: var(--bg-color);
     margin-right: 10px;
     position:relative;
     top:5px;
-    
+
 }
 
