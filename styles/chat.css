@@ -107,7 +107,7 @@ body{
 }
 
 .send_icon svg{
-    padding-right: 30px;
+    margin-right: 30px;
     position:relative;
     top:5px;
 }
