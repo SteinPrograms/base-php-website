@@ -114,7 +114,7 @@
             }
             elseif  ( mysqli_num_rows($result) > 0){
                 while ($row = mysqli_fetch_assoc($result)){
-                    echo("var start ='".row."' ;");
+                    echo("var start ='"."ok"."' ;");
                 }
             }
             else{
