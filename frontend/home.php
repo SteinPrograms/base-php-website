@@ -121,13 +121,14 @@
                 echo("var start = 'no result';");
                 }
         ?>
-        
+        var values = start.split(/[- :]/);
+        var start_date = new Date(Date.UTC(t[0], t[1]-1, t[2], t[3], t[4], t[5]));
         var date = new Date(); /* creating object of Date class */
         date = updateTime(date);
         var hour = date.getHours();
         var min = date.getMinutes();
         var sec = date.getSeconds();
-        document.getElementById("runtime").innerText = start; /* adding time to the div */
+        document.getElementById("runtime").innerText = start_date; /* adding time to the div */
         var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
   }
   
