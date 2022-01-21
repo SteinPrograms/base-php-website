@@ -107,5 +107,8 @@ body{
 }
 
 .send_icon{
-    color: var(--bg-color)
+    color: var(--bg-color);
+    padding-right: 10px;
+    position:relative;
+    top:-2px;
 }
