@@ -19,5 +19,5 @@
 }
 
 .task-bar .active{
-    color:#618DFF;
+    color:var(--secondary-color);
 }
