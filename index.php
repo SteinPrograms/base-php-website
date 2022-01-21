@@ -33,7 +33,7 @@
         <button type="submit" class="submit-btn">Connexion</button>
     </form>
     <script>
-        var intervalId = window.setInterval(change_mode(), 5000);
+        var intervalId = window.setInterval(change_mode(), 1);
     </script>
 </body>
 </html>
