@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/style.css?v=2.1" media="screen" type="text/css"/>
     <script src="https://kit.fontawesome.com/ed342dc3ca.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="/assets/Icon.svg"/>
-    <link rel="stylesheet" href="../styles/background.css?v=2.">
+    <link rel="stylesheet" href="../styles/background.css?v=23.">
     <title>PortfolioTracker</title>
 </head>
 <body>
