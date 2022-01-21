@@ -106,9 +106,13 @@ body{
     background:var(--accent-color);
 }
 
-.send_icon{
-    color: var(--bg-color);
+.send_icon svg{
     padding-right: 10px;
     position:relative;
     top:-2px;
+}
+
+.send_icon{
+    color: var(--bg-color);
+
 }
