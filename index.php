@@ -34,8 +34,13 @@
             <button type="submit" class="submit-btn">Connexion</button>
             
         </form>
-        <script src="/styles/index.js"></script>
         <script>
+            const tl = gsap.timeline({duration:3});
+            tl.fromTo('.input-group', {scale:1.3});
+        </script>
+        <script>
+
+
         function reveal_password() {
             var text = document.getElementById('password-reveal-text')
             
