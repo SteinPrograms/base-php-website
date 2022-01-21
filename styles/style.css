@@ -57,10 +57,10 @@ body{
     width: 200px;
     display:flex;
     flex-direction: row;
-    background: var(--accent-color);
+    background: var(--bg-color);
 
     border-radius: 5px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 0.2px solid var(--accent-color);
     color:var(--accent-color);
 }
 
