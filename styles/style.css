@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 
+
+
 body{
-    background:#181818;
     overflow: hidden;
+    background:var(--bg-color);
+
 }
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Readex Pro', sans-serif;
 }
-
-
-
 
 .input-group{
     text-align:center;
@@ -19,11 +20,11 @@ body{
     display:flex;
     flex-direction:column;
     width: 100%;
-    overflow: hidden;
+    overflow:visible;
 }
 
 .input-group h1{
-    color: #fff;
+    color: var(--accent-color);
     font-weight: 400;
 }
 
@@ -31,6 +32,7 @@ body{
     color:#9D9D9D;
     margin-top:15px;
     margin-bottom:30px;
+    
 }
 
 #password-reveal{
@@ -40,7 +42,7 @@ body{
 }
 
 #password-reveal p{
-    color:white;
+    color:var(--accent-color);
     font-size:10px;
 }
 
@@ -55,18 +57,17 @@ body{
     width: 200px;
     display:flex;
     flex-direction: row;
-    background: rgba( 255, 255, 255, 0.25 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    color:white; 
+    background: var(--bg-color);
+
+    border-radius: 5px;
+    border: 1px solid var(--accent-color);
+    color:var(--accent-color);
 }
 
 #eye{
     margin-right: 10px;
     padding-top:12px;
-    color: white;
+    color: var(--accent-color);
 
 }
 
@@ -84,15 +85,8 @@ input::placeholder {
     flex-direction: row;
     margin:5px auto;
     cursor: pointer;
-    background: #618DFF;
-    color:#ffffff;
-    border-radius: 10px;
+    background: var(--secondary-color);
+    color:var(--accent-color);
+    border-radius: 5px;
     border:none;
 }
-
-
-.check-box{
-    font-family: "Poppins", sans-serif;
-    opacity:0;
-}
-
