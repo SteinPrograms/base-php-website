@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 body{
-    background-color: var(--bg-color);
+    background-color: #181818;
 }
 
 *{
@@ -19,7 +19,7 @@ body{
     padding-top: 50px;
     padding-left: 35px;
     text-align: left;
-    color:var(--accent-color);
+    color:white;
     font-size:36px;
     font-weight: normal;
 }
@@ -27,7 +27,7 @@ body{
 .header p{
     font-weight:100;
     text-align: left;
-    color:var(--accent-color);
+    color:white;
     padding-left: 35px;
     font-size:24px;
 }
@@ -37,7 +37,9 @@ body{
     margin-top:20px;
     margin-left: 5px;
     margin-right: 5px;
-    background: gray;
+    background: rgba( 255, 255, 255, 0.05 );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
 }
 

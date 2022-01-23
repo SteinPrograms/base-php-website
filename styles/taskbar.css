@@ -13,11 +13,11 @@
 .task-bar svg{
     width: 40px;
     height: 40px;
-    color:var(--accent-color);
+    color:white;
     border-radius: 10px;
     padding:5px 5px;
 }
 
 .task-bar .active{
-    color:var(--secondary-color);
+    background:#618DFF;
 }
