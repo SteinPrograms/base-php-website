@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="../styles/chat.css?v=5">
     <link rel="stylesheet" href="../styles/taskbar.css?v=2">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/Icon.svg"/>
+    <link rel="canonical" href="https://hugodemenez.fr/frontend/chat.php">
+
 
 </head>
 
@@ -58,7 +60,7 @@
             </button>
             </div>
         </form>
-        
+        <script async src="https://telegram.org/js/telegram-widget.js?15" data-telegram-discussion="portfoliowebsitetracker" data-comments-limit="5" data-dark="1"></script>
 
 <footer>
     <script src="/scripts/index.js"></script>
