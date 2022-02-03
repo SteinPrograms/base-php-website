@@ -60,7 +60,7 @@
             </button>
             </div>
         </form>
-        <script async src="https://telegram.org/js/telegram-widget.js?15" data-telegram-discussion="portfoliowebsitetracker" data-comments-limit="5" data-dark="1"></script>
+        <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="VDO03_sE" data-limit="5"></script>
 
 <footer>
     <script src="/scripts/index.js"></script>
