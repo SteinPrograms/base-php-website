@@ -105,6 +105,7 @@ body{
 
 .message_field{
     background:var(--accent-color);
+    color:var(--bg-color);
 }
 
 .chat_box button svg{
