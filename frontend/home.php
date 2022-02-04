@@ -42,7 +42,7 @@
     <div class="status">
         
         <h1>Status</h1>
-        <form name="form" action="../backend/run_program.php" method="get">
+        <form name="form" action="../backend/power_program.php" method="get">
             <button><p>run</p></button>
         </form>
         <div class="little-break"></div>

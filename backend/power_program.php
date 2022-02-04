@@ -1,6 +1,6 @@
 <?php
 
 require("database.php");
-database_launch_program();
+database_update_program();
 header('Location: ../frontend/home.php');
 ?>

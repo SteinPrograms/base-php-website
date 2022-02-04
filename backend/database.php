@@ -67,24 +67,44 @@ function database_to_chart(){
         }
 }
 
-function database_launch_program(){
+function database_update_program(){
 
     $database   = cnxDB() ;
     
-    if ($database == false) 
-        {
+    if ($database == false){
             echo "Erreur de connexion à la base de données " ;
             return;
         }
-                        
-      
-    $requete = "UPDATE `program` SET `status` = 1 WHERE `id` = '1' LIMIT 1;";
-    if ($database->query($requete) === TRUE) {
-        echo "Record updated successfully";
-      } else {
-        echo "Error updating record: " . $database->error;
-      }
-      
+
+    $requete = "select * from program" ;
+    $result = mysqli_query($database,$requete);
+
+    if ( $result == FALSE ){
+            echo "Erreur d'exécution de la requete " ;
+            return;
+        }
+
+    if  ( mysqli_num_rows($result) > 0){
+            while ($row = mysqli_fetch_assoc($result)){
+                    $status = $row['status'];
+                    if ($status == 1){
+                        $requete = "UPDATE `program` SET `status` = 1 WHERE `id` = '1' LIMIT 1;";
+                        if ($database->query($requete) === TRUE) {
+                            echo "Record updated successfully";
+                        } else {
+                            echo "Error updating record: " . $database->error;
+                        }
+                    }
+                    else{
+                        $requete = "UPDATE `program` SET `status` = 0 WHERE `id` = '1' LIMIT 1;";
+                        if ($database->query($requete) === TRUE) {
+                            echo "Record updated successfully";
+                        } else {
+                            echo "Error updating record: " . $database->error;
+                        }
+                    }                    
+                }  
+        }
       $database->close();
 }
 
