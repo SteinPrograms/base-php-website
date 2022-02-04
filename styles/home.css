@@ -140,3 +140,11 @@ body{
 @keyframes blinker {  
     50% { opacity: 0; }
 }
+
+.power{
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color:var(--secondary-color);
+}
