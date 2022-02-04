@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 
 
-
 body{
     overflow: hidden;
     background:var(--bg-color);
-
 }
 
 *{
@@ -49,7 +47,7 @@ body{
 
 .input-field{
     border:0;
-    text-align: left;
+    text-align: center;
     margin:0 auto;
     margin-top: 15px;
     padding:15px 20px;
@@ -57,10 +55,9 @@ body{
     width: 200px;
     display:flex;
     flex-direction: row;
-    background: var(--bg-color);
+    background: var(--primary-color);
 
     border-radius: 5px;
-    border: 1px solid var(--accent-color);
     color:var(--accent-color);
 }
 
@@ -73,20 +70,34 @@ body{
 
 input::placeholder {
     color: #cccccc;
-    text-align: left;
+    text-align: center;
     }
 
 
 .submit-btn{
-    text-align: center;
-    padding: 10px 15px;
-    
+    width:100px;
+    height:100px;
     display:flex;
     flex-direction: row;
     margin:5px auto;
     cursor: pointer;
-    background: var(--secondary-color);
-    color:var(--accent-color);
-    border-radius: 5px;
     border:none;
+    background: linear-gradient(180deg, #6FA2FF 0%, #4E72CE 100%);
+box-shadow: 8.16431e-16px 13.3333px 26.6667px rgba(19, 28, 51, 0.2995), inset -2.84844e-16px -4.65185px 4.65185px #496BC1, inset 2.84844e-16px 4.65185px 4.65185px #74A9FF;
+border-radius: 57px;
+}
+
+.bot{
+
+    display:flex;
+    margin:0 auto;
+    z-index: -1;
+    width: 80%;
+}
+
+#power_button{
+    fill:var(--bg-color);
+    width:75px;
+    height:75px;
+    transform: translate(12px,10px);
 }
