@@ -87,7 +87,7 @@ function database_update_program(){
     if  ( mysqli_num_rows($result) > 0){
             while ($row = mysqli_fetch_assoc($result)){
                     $status = $row['status'];
-                    if ($status == 1){
+                    if ($status == 0){
                         $requete = "UPDATE `program` SET `status` = 1 WHERE `id` = '1' LIMIT 1;";
                         if ($database->query($requete) === TRUE) {
                             echo "Program running successfully";
