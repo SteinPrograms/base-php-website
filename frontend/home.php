@@ -199,11 +199,14 @@
                 }
         ?>
         var power_button = document.getElementById("power_button");
+        var light_indicator = document.getElementByClassName("status-light");
         if (power=='1'){
+            light_indicator.style.background='green'
             power_button.style.fill = 'green';
             console.log("Button color set to green");
         }
         else{
+            light_indicator.style.background='red'
             power_button.style.fill = 'red';
             console.log("Button color set to red");
         }
