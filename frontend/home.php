@@ -209,6 +209,7 @@
             light_indicator.style.background='red'
             power_button.style.fill = 'red';
             console.log("Button color set to red");
+            start = 'no'
         }
 
 </script>
