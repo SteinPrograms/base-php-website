@@ -199,7 +199,7 @@
                 }
         ?>
         var power_button = document.getElementById("power_button");
-        var light_indicator = document.getElementByClassName("status-light");
+        var light_indicator = document.getElementsByClassName("status-light");
         if (power=='1'){
             light_indicator.style.background='green'
             power_button.style.fill = 'green';
