@@ -79,15 +79,13 @@ function database_launch_program(){
                         
       
     $requete = "UPDATE `program` SET `status` = '1' WHERE `id` = '1' LIMIT 1;";
-    if(mysqli_query($database,$requete)){
-        echo "Status updated successfully !";
-    }
-    
-    else{
-        echo "Unable to update program status";
-    }
-
-    $database -> commit() ;
+    if ($database->query($requete) === TRUE) {
+        echo "Record updated successfully";
+      } else {
+        echo "Error updating record: " . $database->error;
+      }
+      
+      $database->close();
 }
 
 ?>
