@@ -142,6 +142,7 @@ body{
 }
 
 .power{
+    overflow: visible;
     padding-top: 3px;
     border: none;
     text-align: center;
