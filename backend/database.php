@@ -90,7 +90,7 @@ function database_update_program(){
                     if ($status == 1){
                         $requete = "UPDATE `program` SET `status` = 1 WHERE `id` = '1' LIMIT 1;";
                         if ($database->query($requete) === TRUE) {
-                            echo "Record updated successfully";
+                            echo "Program running successfully";
                         } else {
                             echo "Error updating record: " . $database->error;
                         }
@@ -98,7 +98,7 @@ function database_update_program(){
                     else{
                         $requete = "UPDATE `program` SET `status` = 0 WHERE `id` = '1' LIMIT 1;";
                         if ($database->query($requete) === TRUE) {
-                            echo "Record updated successfully";
+                            echo "Program stopped successfully";
                         } else {
                             echo "Error updating record: " . $database->error;
                         }
