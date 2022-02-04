@@ -44,7 +44,7 @@
         <h1>Status</h1>
 
         <form name="form" action="../backend/power_program.php" method="get">
-            <button class="power"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <button class="power" id="power_button"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 30.143 30.143" style="enable-background:new 0 0 30.143 30.143;" xml:space="preserve">
 
 	<path style="fill:#030104;" d="M20.034,2.357v3.824c3.482,1.798,5.869,5.427,5.869,9.619c0,5.98-4.848,10.83-10.828,10.83
@@ -180,6 +180,33 @@
 
 
     currentTime(); /* calling currentTime() function to initiate the process */
+</script>
+
+<script>
+        <?php 
+            $requete = "select * from program";
+            $result = @mysqli_query(cnxDB(),$requete);
+            if ( $result == FALSE ){
+                echo("var power = 'error';");
+            }
+            elseif  ( mysqli_num_rows($result) > 0){
+                while ($row = mysqli_fetch_assoc($result)){
+                    echo("var power ='".$row['status']."' ;");
+                }
+            }
+            else{
+                echo("var power = 'no result';");
+                }
+        ?>
+        var power_button = document.getElementbyId('power');
+        if (power=='1'){
+            
+            power_button.style.color = 'green';
+        }
+        else{
+            power_button.style.color = 'red';
+        }
+
 </script>
 </body>
 </html>
