@@ -201,9 +201,11 @@
         var power_button = document.getElementbyId('power');
         if (power=='1'){
             power_button.style.fill = 'green';
+            console.log("Button color set to green");
         }
         else{
             power_button.style.fill = 'red';
+            console.log("Button color set to red");
         }
 
 </script>
