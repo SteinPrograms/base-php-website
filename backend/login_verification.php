@@ -24,4 +24,8 @@ if(isset(isset($_POST['password'])){
    }
    
 }
+else
+   {
+      header('Location: ../index.php?erreur=1');
+   }
 ?>
