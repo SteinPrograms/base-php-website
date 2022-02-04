@@ -57,7 +57,7 @@
 
         </form>
         <div class="little-break"></div>
-        <div class="status-light"></div>
+        <div class="status-light" id="status_light"></div>
         <p>En marche depuis : <p id="runtime"></p></p>
 
     </div>
@@ -199,7 +199,7 @@
                 }
         ?>
         var power_button = document.getElementById("power_button");
-        var light_indicator = document.getElementsByClassName("status-light");
+        var light_indicator = document.getElementById("status_light");
         if (power=='1'){
             light_indicator.style.background='green'
             power_button.style.fill = 'green';
