@@ -42,9 +42,13 @@
     <div class="status">
         
         <h1>Status</h1>
+        <form name="form" action="../backend/run_program.php" method="get">
+            <button><p>run</p></button>
+        </form>
         <div class="little-break"></div>
         <div class="status-light"></div>
         <p>En marche depuis : <p id="runtime"></p></p>
+
     </div>
     <h1 class='transaction-title'>Historique des transactions</h1>
     <div class="transactions">

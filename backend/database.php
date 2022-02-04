@@ -67,4 +67,27 @@ function database_to_chart(){
         }
 }
 
+function database_launch_program(){
+
+    $database   = cnxDB() ;
+    
+    if ($database == false) 
+        {
+            echo "Erreur de connexion à la base de données " ;
+            return;
+        }
+                        
+      
+    $requete = "UPDATE `program` SET `status` = '1' WHERE `id` = '1' LIMIT 1;";
+    if(mysqli_query($database,$requete)){
+        echo "Status updated successfully !"
+    }
+    
+    else{
+        echo "Unable to update program status"
+    }
+
+    $database -> commit() ;
+}
+
 ?>
