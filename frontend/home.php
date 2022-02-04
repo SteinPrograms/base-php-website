@@ -198,7 +198,7 @@
                 echo("var power = 'no result';");
                 }
         ?>
-        var power_button = document.getElementbyId('power');
+        var power_button = document.getElementById("power_button");
         if (power=='1'){
             power_button.style.fill = 'green';
             console.log("Button color set to green");
