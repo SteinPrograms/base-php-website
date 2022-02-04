@@ -1,12 +1,7 @@
 <?php
-ini_set('display_errors', 'on');
 include "database.php";
-
-
-
-if(isset(isset($_POST['password'])){
+if($password = isset($_POST['password'])){
    $username = "hugo";
-   $password = $_POST['password'];
    $conn = cnxDB();
    $results = $conn->query("SELECT * FROM user WHERE username = '$username'");
    $row = $results->fetch_assoc();
