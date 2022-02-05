@@ -2,5 +2,5 @@
 
 require("database.php");
 database_update_program();
-header('Location: ../frontend/home.php');
+header('Location: ../frontend/funds.php');
 ?>

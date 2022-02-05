@@ -1,9 +1,6 @@
 <?php
 
 function chart($name,$dates,$values){
-    $random_color1 =(rand(0, 255));
-    $random_color2 =(rand(0, 255));
-    $random_color3 =(rand(0, 255));
     echo('
     <canvas style="width:100%" id="'.$name.'"></canvas>
     <script>
@@ -28,9 +25,9 @@ function chart($name,$dates,$values){
             pointBackgroundColor: "transparent",
             pointBorderColor: "#618DFF",
             pointBorderWidth: 3,
-            pointHoverBorderColor: "rgba(255, 255, 255, 0.2)",
+            pointHoverBorderColor: "#618DFF",
             pointHoverBorderWidth: 10,
-            lineTension: 0.3,
+            lineTension: 0.4,
           }]},
           options: {
             plugins: {
@@ -50,7 +47,7 @@ function chart($name,$dates,$values){
               y: {
                 grid:{display:false},
                   ticks: {
-                      color: "white",
+                      display:false,
                   }
                   },
                 x: {
@@ -63,7 +60,10 @@ function chart($name,$dates,$values){
                       label = label.substring(5, 10);
                       return index % 2 === 0 ? label : "";
                     },
-                    color: "white",
+                    color: "#000",
+                    font: {
+                      weight: "bold",
+                  }
                   }
                 }
               }

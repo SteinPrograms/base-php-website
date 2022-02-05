@@ -43,19 +43,7 @@
         
         <h1>Status</h1>
 
-        <form name="form" action="../backend/power_program.php" method="get">
-            <button class="power">
-                <svg id="power_button" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	                viewBox="0 0 30.143 30.143" style="enable-background:new 0 0 30.143 30.143;" xml:space="preserve">
-                    <path d="M20.034,2.357v3.824c3.482,1.798,5.869,5.427,5.869,9.619c0,5.98-4.848,10.83-10.828,10.83
-                        c-5.982,0-10.832-4.85-10.832-10.83c0-3.844,2.012-7.215,5.029-9.136V2.689C4.245,4.918,0.731,9.945,0.731,15.801
-                        c0,7.921,6.42,14.342,14.34,14.342c7.924,0,14.342-6.421,14.342-14.342C29.412,9.624,25.501,4.379,20.034,2.357z"/>
-                    <path d="M14.795,17.652c1.576,0,1.736-0.931,1.736-2.076V2.08c0-1.148-0.16-2.08-1.736-2.08
-                        c-1.57,0-1.732,0.932-1.732,2.08v13.496C13.062,16.722,13.225,17.652,14.795,17.652z"/>
-                </svg>
-        </button>
 
-        </form>
         <div class="little-break"></div>
         <div class="status-light" id="status_light"></div>
         <p>En marche depuis : <p id="runtime"></p></p>
@@ -85,38 +73,10 @@
     
 <footer>
 <script src="/scripts/index.js"></script>
-    <div class="task-bar">
-        <ul>
-            <li >
-                <a  href="./home.php">
-                    <svg class="active" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
-                        <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 19v-8.5a1 1 0 0 0-.4-.8l-7-5.25a1 1 0 0 0-1.2 0l-7 5.25a1 1 0 0 0-.4.8V19a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1z"/>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="./graphs.php">
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
-                        <path fill="currentColor" fill-rule="evenodd" d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6zm10 2a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0V8zm-4 3a1 1 0 1 0-2 0v5a1 1 0 1 0 2 0v-5zm8 3a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2z" clip-rule="evenodd"/>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="./chat.php">
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12h-.394a2 2 0 0 0-1.11.336L3 14V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v2"/><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10h7a2 2 0 0 1 2 2v9l-2.496-1.664a2 2 0 0 0-1.11-.336H12a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2z"/>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="./funds.php">
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
-                        <path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12zm12-6a1 1 0 1 0-2 0v1a3 3 0 0 0 0 6h2a1 1 0 1 1 0 2H9a1 1 0 1 0 0 2h2v1a1 1 0 1 0 2 0v-1a3 3 0 1 0 0-6h-2a1 1 0 1 1 0-2h4a1 1 0 1 0 0-2h-2V6z" clip-rule="evenodd"/>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </div>
+<?php
+include("../backend/task_bar.php");
+task_bar("home");
+?>
 </footer>
 
 <script>
@@ -198,16 +158,13 @@
                 echo("var power = 'no result';");
                 }
         ?>
-        var power_button = document.getElementById("power_button");
         var light_indicator = document.getElementById("status_light");
         if (power=='1'){
             light_indicator.style.background='green'
-            power_button.style.fill = 'green';
             console.log("Button color set to green");
         }
         else{
             light_indicator.style.background='red'
-            power_button.style.fill = 'red';
             console.log("Button color set to red");
             start = 'no'
         }

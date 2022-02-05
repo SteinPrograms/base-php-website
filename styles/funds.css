@@ -13,3 +13,16 @@ body{
     padding-top:20px;
     float:right;
 }
+
+.power{
+    overflow: visible;
+    padding-top: 3px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background:none;
+    width:30px;
+    height:30px;
+    color:var(--power-color);
+}
