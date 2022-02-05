@@ -92,7 +92,7 @@ border-radius: 57px;
     display:flex;
     margin:0 auto;
     z-index: -1;
-    width: 80%;
+    height: 20%;
 }
 
 #power_button{
