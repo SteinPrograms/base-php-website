@@ -26,10 +26,7 @@
         }
     ?>  
         <input id="password" type="password" class="input-field" placeholder="Code secret" name="password">
-        <div id="password-reveal" onclick="reveal_password()">
-            <i id="eye" class="fas fa-eye"></i>
-            <p id="password-reveal-text">Afficher le code secret</p>
-        </div>
+        
         <button type="submit" class="submit-btn">
         <svg id="power_button" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	                viewBox="0 0 30.143 30.143" style="enable-background:new 0 0 30.143 30.143;" xml:space="preserve">
