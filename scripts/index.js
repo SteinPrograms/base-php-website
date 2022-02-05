@@ -14,12 +14,14 @@ function change_mode(){
         root.style.setProperty('--accent-color', "rgb(255, 255, 255)");
         root.style.setProperty('--primary-color', "#618DFF");
         root.style.setProperty('--secondary-color', "#FF7700");
+        root.style.setProperty('--gray-color', "#ADADAD");
     }
     else{
         root.style.setProperty('--bg-color', "#FFF");
         root.style.setProperty('--accent-color', "#181818");
         root.style.setProperty('--primary-color', "#618DFF");
         root.style.setProperty('--secondary-color', "#FF7700");
+        root.style.setProperty('--gray-color', "#ADADAD");
     }
 }
 
