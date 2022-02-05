@@ -11,7 +11,7 @@ function chart($name,$dates,$values){
         gradient = '.$name.'.createLinearGradient(0, 0, 0, 450);
     
     
-    gradient.addColorStop(0, "#FFC898");
+    gradient.addColorStop(0, "#618DFF");
     gradient.addColorStop(0.2, "rgba(0, 0, 0, 0)");
 
     new Chart('.$name.',{
