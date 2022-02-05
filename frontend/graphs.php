@@ -23,7 +23,32 @@
     <link rel="shortcut icon" type="image/x-icon" href="../assets/Icon.svg"/>
 
 </head>
+<script>
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        var newColorScheme = "dark";
+    }
 
+    else{
+        var newColorScheme = "light";
+    }
+
+    var root = document.querySelector(':root');
+
+    if (newColorScheme == "dark" ){
+        root.style.setProperty('--bg-color', "#181818");
+        root.style.setProperty('--accent-color', "rgb(255, 255, 255)");
+        root.style.setProperty('--primary-color', "#618DFF");
+        root.style.setProperty('--secondary-color', "#FF7700");
+        root.style.setProperty('--gray-color', "#ADADAD");
+    }
+    else{
+        root.style.setProperty('--bg-color', "#FFF");
+        root.style.setProperty('--accent-color', "#181818");
+        root.style.setProperty('--primary-color', "#618DFF");
+        root.style.setProperty('--secondary-color', "#FF7700");
+        root.style.setProperty('--gray-color', "#ADADAD");
+    }
+</script>
 <body onload="change_mode()">
 <a class='logout' href="../backend/logout.php" >
         <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">

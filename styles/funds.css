@@ -20,9 +20,9 @@ body{
     border: none;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    margin: 0 auto;
     background:none;
     width:30px;
     height:30px;
-    color:var(--power-color);
 }
