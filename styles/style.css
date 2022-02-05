@@ -14,7 +14,7 @@ body{
 
 .input-group{
     text-align:center;
-    margin-top:15vh;
+    margin-top:10vh;
     display:flex;
     flex-direction:column;
     width: 100%;
@@ -29,8 +29,6 @@ body{
 .input-group p{
     color:#9D9D9D;
     margin-top:15px;
-    margin-bottom:30px;
-    
 }
 
 #password-reveal{
@@ -59,6 +57,7 @@ body{
 
     border-radius: 5px;
     color:var(--accent-color);
+    margin-bottom: 30px;
 }
 
 #eye{
@@ -93,6 +92,7 @@ border-radius: 57px;
     margin:0 auto;
     z-index: -1;
     height: 250px;
+    
 }
 
 #power_button{
