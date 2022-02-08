@@ -41,6 +41,11 @@ body{
     border-radius: 10px;
 }
 
+@supports (-webkit-touch-callout: none) {
+    .graph{
+        width: 100%;
+    }
+  }
 
 
 
