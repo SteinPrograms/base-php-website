@@ -59,7 +59,7 @@
             while ($row = mysqli_fetch_assoc($result)){
                 echo ("
                 <div class='transaction'>
-                    <img src='../assets/".$row['asset'].".svg' width='40px'alt=".$row['asset'].">
+                    <img src='../assets/".strtolower($row['asset']).".svg' width='40px'alt=".$row['asset'].">
                     <div class='info'><h1 class='side'>".$row['side']."</h1>
                     <div class='full-break'></div>
                     <p class='date'>".date('M d à H:i:s',strtotime($row['date']))."</p>
