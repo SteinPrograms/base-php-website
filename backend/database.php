@@ -45,7 +45,7 @@ function database_to_chart(){
         {
             while ($row = mysqli_fetch_assoc($result))
                 {
-                    $requete2 = "select * from data where portfolioName = '".$row['name']."'" ;
+                    $requete2 = "select * from data where portfolioName = '".$row['name']."' order by date ASC" ;
                     $result2 = mysqli_query($database,$requete2);
                     $values = array();
                     $dates =array();
