@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/graphs.css?v=2">
     <link rel="stylesheet" href="../styles/taskbar.css?v=2">
-
     <link rel="shortcut icon" type="image/x-icon" href="../assets/Icon.svg"/>
 
 </head>
@@ -64,6 +63,10 @@
     @database_to_chart();
     ?>
     </div>
+
+    <div class="drawdown">
+        <canvas id="drawdown" width="400" height="400"></canvas>
+    </div>
     <footer>
     <script src="/scripts/index.js"></script>
     <?php
@@ -72,4 +75,34 @@ task_bar("graphs");
 ?>
 </footer>
 </body>
+<script>
+    var test = <?php 
+        $database   = cnxDB() ;
+
+        if ($database == false){
+            echo json_encode([0,1]);
+            return;
+        }
+
+        $requete = "select * from positions" ;
+        $result = mysqli_query($database,$requete);
+    
+        if ( $result == FALSE ){
+            echo json_encode([0,1]);
+            return;
+        }
+    
+        $results = [];
+        if  ( mysqli_num_rows($result) > 0){
+            while ($row = mysqli_fetch_assoc($result)){
+                array_push($results, (floatval($row['lowest_price']) / floatval($row['opening_price']) - 1)*100 );
+            }
+            echo json_encode($results);
+        }
+        else{
+                echo json_encode([0,1]);
+        }
+    ?>
+</script>
+<script src="../scripts/drawdown_graph.js"></script>
 </html>
