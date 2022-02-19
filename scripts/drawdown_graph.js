@@ -37,9 +37,11 @@ const chart = new Chart(ctx, {
         grid:{
           display:false
         },
-        color: accent_color,
-        font:{
-          weight: "bold",
+        ticks: {
+          color: accent_color,
+          font:{
+            weight: "bold",
+          }
         }
       }
     }
