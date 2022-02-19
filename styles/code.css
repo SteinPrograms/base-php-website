@@ -81,7 +81,7 @@ body{
 }
 
 #pincode button:active {
-  background-color: rgba(var(--accent-color),0.9);
+  background-color: var(--accent-color);
   outline: 0;
 }
 
