@@ -12,92 +12,59 @@ body{
     font-family: 'Readex Pro', sans-serif;
 }
 
-.input-group{
-    text-align:center;
-    margin-top:10vh;
-    display:flex;
-    flex-direction:column;
-    width: 100%;
-    overflow:visible;
+.text{
+    margin-left: 35px;
 }
 
-.input-group h1{
+h1{
+    font-size: 24px;
     color: var(--accent-color);
     font-weight: 400;
 }
 
-.input-group p{
+p{
+    font-size: 12px;
     color:#9D9D9D;
     margin-top:15px;
 }
 
-#password-reveal{
-    display: flex;
-    margin:0px auto;
-    margin-top:0px;
-}
-
-#password-reveal p{
-    color:var(--accent-color);
-    font-size:10px;
-}
-
-
-.input-field{
-    border:0;
-    text-align: center;
-    margin:0 auto;
-    margin-top: 15px;
-    padding:15px 20px;
-    
-    width: 200px;
+button{
     display:flex;
     flex-direction: row;
-    background: var(--primary-color);
-
-    border-radius: 5px;
-    color:var(--accent-color);
-    margin-bottom: 30px;
-}
-
-#eye{
-    margin-right: 10px;
-    padding-top:12px;
-    color: var(--accent-color);
-
-}
-
-input::placeholder {
-    color: #cccccc;
-    text-align: center;
-    }
-
-
-.submit-btn{
-    width:100px;
-    height:100px;
-    display:flex;
-    flex-direction: row;
-    margin:5px auto;
+    margin-top: 70px;
+    margin-left: 50px;
     cursor: pointer;
     border:none;
-    background: linear-gradient(180deg, #6FA2FF 0%, #4E72CE 100%);
-box-shadow: 8.16431e-16px 13.3333px 26.6667px rgba(19, 28, 51, 0.2995), inset -2.84844e-16px -4.65185px 4.65185px #496BC1, inset 2.84844e-16px 4.65185px 4.65185px #74A9FF;
-border-radius: 57px;
+    background:none;
 }
 
-.bot{
-
-    display:flex;
-    margin:0 auto;
-    z-index: -1;
-    height: 250px;
-    
+.button{
+    fill:var(--accent-color);
 }
 
-#power_button{
+.arrow{
     fill:var(--bg-color);
-    width:75px;
-    height:75px;
-    transform: translate(12px,10px);
+}
+
+
+#btc1{
+    transform: translate(-50px,-45px);
+}
+
+#btc2{
+    transform: translate(80px,65px);
+}
+
+#bricks{
+
+}
+
+.images{
+    transform: translate(-55px,0px);
+    margin-top:20vh;
+    margin-bottom:45px;
+
+    align-items: center;
+    display:flex;
+    flex-direction: row;
 }

@@ -1,3 +1,13 @@
+<?php
+    ini_set('display_errors', 'on');
+    session_start();
+    require("../backend/database.php");
+    require("../backend/functions.php");
+    if ($_SESSION["auth"]!=1){
+        header('Location:../index.php?erreur=1');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

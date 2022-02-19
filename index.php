@@ -5,50 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
     <link rel="stylesheet" href="./styles/style.css?v=1" media="screen" type="text/css"/>
-    <script src="https://kit.fontawesome.com/ed342dc3ca.js" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+    <script src="/scripts/index.js"></script>
     
     <link rel="shortcut icon" type="image/x-icon" href="/assets/Icon.svg"/>
     <title>PortfolioTracker</title>
 </head>
-<body>
-    <!-- Affichage du formulaire de connexion et d'inscription -->
-    <form id="connexion" class="input-group" action="/backend/login_verification.php" method="POST">      
-    <div class="title"><h1>Bonjour!</h1></div>
-    <div class="subtitle"><p>Bienvenue sur le site<br>de gestion du programme</p></div>
-    <img class="bot" src="/assets/bot.gif"/>
-    <?php
-        if(isset($_GET['erreur'])){
-            $err = $_GET['erreur'];
-            if($err==1 || $err==2)
-                echo "<p style='color:red;'>⚠️Utilisateur ou mot de passe incorrect</p>";
-        }
-    ?>  
-        <input id="password" type="password" class="input-field" placeholder="Code secret" name="password">
-        
-        <button type="submit" class="submit-btn">
-        <svg id="power_button" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	                viewBox="0 0 30.143 30.143" style="enable-background:new 0 0 30.143 30.143;" xml:space="preserve">
-                    <path d="M20.034,2.357v3.824c3.482,1.798,5.869,5.427,5.869,9.619c0,5.98-4.848,10.83-10.828,10.83
-                        c-5.982,0-10.832-4.85-10.832-10.83c0-3.844,2.012-7.215,5.029-9.136V2.689C4.245,4.918,0.731,9.945,0.731,15.801
-                        c0,7.921,6.42,14.342,14.34,14.342c7.924,0,14.342-6.421,14.342-14.342C29.412,9.624,25.501,4.379,20.034,2.357z"/>
-                    <path d="M14.795,17.652c1.576,0,1.736-0.931,1.736-2.076V2.08c0-1.148-0.16-2.08-1.736-2.08
-                        c-1.57,0-1.732,0.932-1.732,2.08v13.496C13.062,16.722,13.225,17.652,14.795,17.652z"/>
+<body onload="change_mode()">
+<div class="images">    
+<img id="btc2" src="/assets/Bitcoin-2.png" alt="">
+    <img id="bricks" src="/assets/GoldBricks-1.png" alt="">
+    <img id="btc1" src="/assets/Bitcoin-1.png" alt="">
+
+</div>
+    <div class="text">
+        <div class="title"><h1>Bienvenue sur le site <br> de gestion du programme</h1></div>
+        <div class="subtitle"><p>Vous retrouverez le suivi des transactions effectuées <br>et la performance du programme</p></div>
+    </div>
+
+    <form id="connexion" class="input-group" action="/frontend/code.php" method="POST">      
+        <button type="submit">
+            <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle class="button" cx="46" cy="46" r="46"/>
+                <path class="arrow" d="M46.069 55V37L62 46L46.069 55Z" />
+                <path class="arrow" d="M46.069 37L46.8068 35.694C46.3424 35.4316 45.7736 35.4356 45.3129 35.7045C44.8522 35.9733 44.569 36.4666 44.569 37H46.069ZM46.069 55H44.569C44.569 55.5334 44.8522 56.0267 45.3129 56.2955C45.7736 56.5644 46.3424 56.5684 46.8068 56.306L46.069 55ZM62 46L62.7378 47.306C63.2088 47.0399 63.5 46.5409 63.5 46C63.5 45.4591 63.2088 44.9601 62.7378 44.694L62 46ZM29 44.5C28.1716 44.5 27.5 45.1716 27.5 46C27.5 46.8284 28.1716 47.5 29 47.5V44.5ZM40.3793 47.5C41.2077 47.5 41.8793 46.8284 41.8793 46C41.8793 45.1716 41.2077 44.5 40.3793 44.5V47.5ZM44.569 37V55H47.569V37H44.569ZM46.8068 56.306L62.7378 47.306L61.2622 44.694L45.3312 53.694L46.8068 56.306ZM62.7378 44.694L46.8068 35.694L45.3312 38.306L61.2622 47.306L62.7378 44.694ZM29 47.5H34.6897V44.5H29V47.5ZM34.6897 47.5H40.3793V44.5H34.6897V47.5Z"/>
             </svg>
         </button>
     </form>
 </body>
-<footer>
-        <script>
-            var root = document.querySelector(':root');
-            root.style.setProperty('--bg-color', "#FFF");
-            root.style.setProperty('--accent-color', "#181818");
-            root.style.setProperty('--primary-color', "#618DFF");
-            root.style.setProperty('--secondary-color', "#FF7700");
-        </script>
-    <script src="/scripts/animation.js"></script>
-</footer>
 
 </html>
 
