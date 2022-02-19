@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
-    <link rel="stylesheet" href="./styles/style.css?v=1" media="screen" type="text/css"/>
-
+    <link rel="stylesheet" href="/styles/style.css" media="screen" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/scripts/index.js"></script>
-    
     <link rel="shortcut icon" type="image/x-icon" href="/assets/Icon.svg"/>
     <title>PortfolioTracker</title>
 </head>
