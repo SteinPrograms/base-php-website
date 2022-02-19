@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../styles/graphs.css">
     <link rel="stylesheet" href="../styles/taskbar.css">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/Icon.svg"/>
-    <script src="/scripts/index.js" ></script>
+    <script src="/scripts/index.js"></script>
     <script src="../scripts/drawdown_graph.js" defer></script>
     <script src="../scripts/portfolio_graph.js" defer ></script>
     <script>

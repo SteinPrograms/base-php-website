@@ -1,6 +1,7 @@
 const ctx1 = document.getElementById('portfolio').getContext('2d');
 
 
+
 const chart1 = new Chart(ctx1,{
   type: "line",
   data: {
@@ -10,12 +11,12 @@ const chart1 = new Chart(ctx1,{
       label: "Evolution du portfolio",
       data: values,
       fill: false,
-      borderColor: "#618DFF",
+      borderColor: primary_color,
       borderWidth: 2,
       pointBackgroundColor: "transparent",
-      pointBorderColor: "#618DFF",
+      pointBorderColor: primary_color,
       pointBorderWidth: 3,
-      pointHoverBorderColor: "#618DFF",
+      pointHoverBorderColor: primary_color,
       pointHoverBorderWidth: 10,
       lineTension: 0.4,
     }]},
@@ -50,7 +51,7 @@ const chart1 = new Chart(ctx1,{
                 label = label.substring(5, 10);
                 return index % 2 === 0 ? label : "";
               },
-              color: getComputedStyle(document.querySelector(":root")).getPropertyValue("--accent-color"),
+              color: accent_color,
               font: {
                 weight: "bold",
             }
