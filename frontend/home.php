@@ -80,7 +80,7 @@ task_bar("home");
 <script>
     function currentYield() {
         <?php
-            $requete = "SELECT * FROM positions ORDER BY opening_date DESC";
+            $requete = "SELECT * FROM positions ORDER BY opening_date ASC";
             $result = @mysqli_query(cnxDB(),$requete);
             if ( $result == FALSE ){
                 echo("var total_yield = 'error';");
