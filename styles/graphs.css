@@ -35,6 +35,7 @@ body{
 
 .graph{
     display:flex;
+    flex-direction: column;
     width: 400px;
     margin:0 auto;
     margin-top:20px;
