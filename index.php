@@ -11,19 +11,18 @@
     <title>PortfolioTracker</title>
 </head>
 <body onload="change_mode()">
-<div class="images">    
-<img id="btc2" src="/assets/Bitcoin-2.png" alt="">
-    <img id="bricks" src="/assets/GoldBricks-1.png" alt="">
-    <img id="btc1" src="/assets/Bitcoin-1.png" alt="">
-
-</div>
+    <div class="images">    
+        <img id="btc2" src="/assets/Bitcoin-2.png" alt="">
+        <img id="bricks" src="/assets/GoldBricks-1.png" alt="">
+        <img id="btc1" src="/assets/Bitcoin-1.png" alt="">
+    </div>
     <div class="text">
         <div class="title"><h1>Bienvenue sur le site <br> de gestion du programme</h1></div>
         <div class="subtitle"><p>Vous retrouverez le suivi des transactions effectuées <br>et la performance du programme</p></div>
     </div>
 
     <form id="connexion" class="input-group" action="/frontend/code.php" method="POST">      
-        <button type="submit">
+        <button type="submit" id="submit_btn">
             <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle class="button" cx="46" cy="46" r="46"/>
                 <path class="arrow" d="M46.069 55V37L62 46L46.069 55Z" />
@@ -32,7 +31,30 @@
         </button>
     </form>
 </body>
+<script>
+    var tl = gsap.timeline({duration:1});
+    tl.fromTo('#btc1',{y:-15},{y:15,repeat:-1,yoyo:true,duration:3,ease:'none'},0)
+    tl.fromTo('#btc2',{y:-10},{y:10,repeat:-1,yoyo:true,duration:2,ease:"none"},0)
+    tl.fromTo('.text',{y:50},{y:0,delay:2},0);
+    tl.from('.text',{scale:2,duration:2,ease:"bounce.out"},0);
 
+    var tl2 = gsap.timeline({duration:1});
+    
+
+    
+    function doCoolStuff() {
+        tl2.to("#submit_btn",{rotation:360,ease:'Power4.easeInOut'});
+        tl2.reversed(!tl2.reversed());
+    }
+
+    document.querySelector("#submit_btn").addEventListener("mouseenter", doCoolStuff);
+    document.querySelector("#submit_btn").addEventListener("mouseleave", doCoolStuff);
+
+    
+//    TweenLite.to(element, 2, {rotation:90, transformOrigin:"left 50%"});
+
+    
+</script>
 </html>
 
 
