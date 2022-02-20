@@ -19,7 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/graphs.css">
-    <link rel="stylesheet" href="../styles/taskbar.css">
+    <link rel="stylesheet" href="../styles/taskbar.css?f">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/Icon.svg"/>
     <script src="/scripts/index.js"></script>
     <script src="../scripts/drawdown_graph.js" defer></script>

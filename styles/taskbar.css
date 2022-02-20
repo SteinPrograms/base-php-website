@@ -3,11 +3,11 @@
     padding: 0 20px;
 }
 
-.task-bar {
+.test {
     text-align:center;
     width: 100%;
     position:fixed;
-    bottom: 10px;
+    bottom: -20px;
 }
 
 .task-bar svg{
@@ -20,4 +20,22 @@
 
 .task-bar .active{
     color:var(--primary-color);
+}
+
+
+.dock li{
+    display:inline-block;
+    padding: 0 20px;
+}
+
+.dock svg{
+    width: 40px;
+    height: 40px;
+    color:var(--gray-color);
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+
+.dock .inactive{
+    visibility: hidden;
 }
